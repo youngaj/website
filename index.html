@@ -1,14 +1,14 @@
-<!doctype html>
+﻿<!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
-    
+
     <!-- Site Title -->
     <title>Andre Young Resume</title>
-    
+
     <meta name="description" content="Andre Young Resume">
     <meta name="keywords" content="andre, young, creative, resume, template">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
@@ -16,26 +16,26 @@
     <!-- Google Font -->
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
-    
+
     <!-- Bootstrap Core CSS -->
     <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    
+
     <!-- Font icons CSS -->
     <link href="assets/plugins/icons-mind/style.css" rel="stylesheet" type="text/css">
     <link href="assets/plugins/fontawesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    
+
     <!-- Plugins CSS -->
     <link href="assets/plugins/jpreloader/css/jpreloader.css" rel="stylesheet" type="text/css">
     <link href="assets/plugins/animate-css/animate.min.css" rel="stylesheet" type="text/css">
     <link href="assets/plugins/magnificPopup/magnific-popup.css" rel="stylesheet" type="text/css">
     <link href="assets/plugins/flexSlider/flexslider.css" rel="stylesheet" type="text/css">
-    
+
     <!-- Main CSS -->
     <link href="assets/css/berg.css" rel="stylesheet" type="text/css">
-    
+
     <!-- Color CSS -->
     <!--<link href="assets/css/colors/green.css" rel="stylesheet" type="text/css">-->
-    
+
     <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 8]>
     <script src="assets/plugins/modernizr.min.js"></script>
@@ -43,26 +43,26 @@
 </head>
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="66">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="66" ng-app="resumeApp" ng-controller="dataCntrl">
     <!--[if lt IE 10]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-  
+
     <!-- HERO START -->
     <header id="home" class="hero">
         <div class="pattern-overlay"></div>
-        
+
         <div class="hero-body">
             <div class="hero-text text-center">
                 <h1 class="small">
                     I'm Andre Young <span class="blinker"></span>
                 </h1>
-                
+
                 <h1>Lead Developer</h1>
-                
-                <p>36 years young, husband and father, code addict.</p>
-                
+
+                <p>{{age}} years young, husband and father, code addict.</p>
+
                 <div class="page-scroll">
                     <a href="#profile" class="btn btn-lg btn-custom">
                         Know Me Better
@@ -75,8 +75,8 @@
         <!-- //.hero-body -->
     </header>
     <!-- //HERO END -->
-    
-    
+
+
     <!-- NAVIGATION START -->
     <nav id="navigation" class="navbar navbar-fixed-top center-menu" role="navigation">
         <div class="container navbar-container">
@@ -87,41 +87,41 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                
+
                 <a class="navbar-brand visible-xs visible-sm" href="#page-top">YOUNG</a>
             </div>
             <!-- //.navbar-header -->
-            
+
             <div class="navbar-collapse collapse berg-collapse">
                 <ul class="nav navbar-nav">
                     <li class="page-scroll">
                         <a href="#home">Home</a>
                     </li>
-                    
+
                     <li class="page-scroll">
                         <a href="#profile">Profile</a>
                     </li>
-                    
+
                     <!--<li class="page-scroll">
                         <a href="#portfolio">Portfolio</a>
                     </li>-->
-                    
+
                     <li class="page-scroll">
                         <a href="#services">Services</a>
                     </li>
-                    
+
                     <li class="page-scroll">
                         <a href="#resume">Resume</a>
                     </li>
-                    
+
                     <li class="page-scroll">
                         <a href="#skills">Skills</a>
                     </li>
-                    
+
                     <li class="page-scroll">
                         <a href="#blog">Blog</a>
                     </li>
-                    
+
                     <li class="page-scroll">
                         <a href="#contact">Contact</a>
                     </li>
@@ -132,13 +132,13 @@
         <!-- //.navbar-container -->
     </nav>
     <!-- //NAVIGATION END -->
-    
-    
+
+
     <!-- PROFILE SECTION START -->
     <section id="profile" class="section">
         <div class="container section-wrapper">
             <div class="section-content">
-                <div class="row">          
+                <div class="row">
                     <div class="col-md-7 match-height">
 
                         <!-- PROFILE TEXT START -->
@@ -148,7 +148,7 @@
                                     <h2 class="section-title uppercase">Hello, My Name is Andre.</h2>
 
                                     <p>
-                                        Andre Young, 36 years young, born and grew up in the Washington D.C. metro area. Highly motivated lead developer with over 15 years of development experience.
+                                        Andre Young, {{age}} years young, born and grew up in the Washington D.C. metro area. Highly motivated lead developer with over {{yearsOfExperience}} years of development experience.
                                     </p>
 
                                     <span class="divider"></span>
@@ -160,7 +160,7 @@
                                     <p class="text-grey">
                                         I also run a bi-weekly developer meetup at NASA, where we discuss various development topics ranging from code architecture to knowing how to say "No" to a customer
                                         and having them say "thank you" afterwards.  I love development, love learning and sharing the things I've learned with anyone willing to listen.
-                                        
+
                                         See my resume and other interests below.
 
                                     </p>
@@ -181,7 +181,7 @@
                                         <li>Andre Young</li>
                                         <li>
                                             <a href="mailto:AndreJYoung@gmail.com">AndreJYoung@gmail.com</a>
-                                            
+
                                         </li>
                                         <li>
                                             twitter: <a href="https://twitter.com/DreYoung79" target="_blank">@DreYoung79</a>
@@ -219,8 +219,8 @@
         <!-- //.container -->
     </section>
     <!-- //PROFILE SECTION END -->
-    
-    
+
+
     <!-- PORTFOLIO SECTION START -->
     <section id="portfolio" class="section">
         <div class="container-fluid section-wrapper">
@@ -236,7 +236,7 @@
                     <!-- //.col-md-12 -->
                 </div>
                 <!-- //.row -->
-                
+
                 <!-- PORTFOLIO START -->
             </div>
             <!-- //.section-content -->
@@ -244,8 +244,8 @@
         <!-- //.container-fluid -->
     </section>
     <!-- //PORTFOLIO SECTION END -->
-    
-    
+
+
     <!-- SERVICES SECTION START -->
     <section id="services" class="section">
         <div class="container section-wrapper">
@@ -263,7 +263,7 @@
                     <!-- //.col-md-8 -->
                 </div>
                 <!-- //.row -->
-            
+
                 <!-- SERVICES START -->
                 <div class="services">
                     <div class="row">
@@ -274,7 +274,7 @@
                                 <h4 class="uppercase">1. Strategy</h4>
 
                                 <p class="text-grey">
-                                    I've been told that one of my strongest points is my ability to sit with a customer, understand their requirements and offer meaningful suggestions.  
+                                    I've been told that one of my strongest points is my ability to sit with a customer, understand their requirements and offer meaningful suggestions.
                                     Key to a good strategy is the collaboration that comes from active listening and empathy.
                                 </p>
                             </div>
@@ -305,13 +305,13 @@
 
                                 <p class="text-grey">
                                     For customers and end users the user interface (UI) is the application.  A great architecture can be overshadowed if the UI and user experience has not been thought out
-                                    users will not get the value. 
+                                    users will not get the value.
                                 </p>
                             </div>
                             <!-- //.inner-content -->
                         </div>
                         <!-- //.item -->
-                        
+
                         <div class="col-sm-4 col-md-4 item match-height">
                             <div class="inner-content">
                                 <i class="icon-Speach-Bubble3 colored-text"></i>
@@ -319,7 +319,7 @@
                                 <h4 class="uppercase">4. Group Leadership</h4>
 
                                 <p class="text-grey">
-                                    I have lead a bi-weekly developer group since late 2012.  
+                                    I have lead a bi-weekly developer group since late 2012.
                                     In order to bootstrap that group I have presented at roughhly 80% of those meetups and mentored several other developers.
                                 </p>
                             </div>
@@ -334,10 +334,10 @@
                                 <h4 class="uppercase">5. Development</h4>
 
                                 <p class="text-grey">
-                                    I am currently developing several applications.  My development 
-                                    stack of choice includes JavaScript, Angular.JS, and BootStrap 
-                                    on the front end and ASP.NET (Web API C#), SQL Server and Redis on 
-                                    the server side.  I am also working on an application using Node.js and TypeScript 
+                                    I am currently developing several applications.  My development
+                                    stack of choice includes JavaScript, Angular.JS, and BootStrap
+                                    on the front end and ASP.NET (Web API C#), SQL Server and Redis on
+                                    the server side.  I am also working on an application using Node.js and TypeScript
                                 </p>
                             </div>
                             <!-- //.inner-content -->
@@ -351,7 +351,7 @@
                                 <h4 class="uppercase">6. Consulting</h4>
 
                                 <p class="text-grey">
-                                    In my career thus far I have not done any consulting but I am looking for opportunities to expand into new horizons.  
+                                    In my career thus far I have not done any consulting but I am looking for opportunities to expand into new horizons.
                                     If you like what you see and think I can help you acheive your short or long term goals please reach out.
                                 </p>
                             </div>
@@ -368,8 +368,8 @@
         <!-- //.container -->
     </section>
     <!-- //SERVICES SECTION END -->
-    
-    
+
+
     <!-- STRENGTHS SECTION START -->
     <section id="strengths" class="section bg-image-yes">
         <div class="container-fluid section-wrapper">
@@ -385,7 +385,7 @@
                     <!-- //.col-md-8 -->
                 </div>
                 <!-- //.row -->
-                
+
                 <div class="row">
                     <div class="col-md-12">
 
@@ -484,7 +484,7 @@
                                     <!-- //.bar -->
                                 </div>
                                 <!-- //.item -->
-                                
+
                             </div>
                             <!-- //.chart -->
                         </div>
@@ -500,8 +500,8 @@
         <!-- //.container -->
     </section>
     <!-- //STRENGTHS SECTION END -->
-    
-    
+
+
     <!-- RESUME SECTION START -->
     <section id="resume" class="section">
         <div class="container section-wrapper">
@@ -519,7 +519,7 @@
                     <!-- //.col-md-8 -->
                 </div>
                 <!-- //.row -->
-                
+
                 <!-- EDUCATION START -->
                 <div class="row education">
                     <div class="col-md-10 col-md-offset-1">
@@ -553,7 +553,7 @@
                                     <div id="education1" class="panel-collapse collapse in">
                                         <div class="panel-body text-grey">
                                             <p>
-                                                I graduated from the Univeristy of Maryland, College Park (UMCP) with a Bachelors of Science for Computer Science.  
+                                                I graduated from the Univeristy of Maryland, College Park (UMCP) with a Bachelors of Science for Computer Science.
                                                 I loved my time at UMCP.  There I learned many foundational principles and the work ethic and determination that
                                                 has propelled me through my career.
                                             </p>
@@ -589,7 +589,7 @@
                                     <div id="education2" class="panel-collapse collapse">
                                         <div class="panel-body text-grey">
                                             <p>
-                                                High School was the place that I discoverd my love for programming.  
+                                                High School was the place that I discoverd my love for programming.
                                             </p>
                                         </div>
                                         <!-- //.panel-body -->
@@ -605,7 +605,7 @@
                     <!-- //.col-md-10 -->
                 </div>
                 <!-- //EDUCATION END -->
-            
+
                 <!-- WORK EXPERIENCE START -->
                 <div class="row work-experience">
                     <div class="col-md-10 col-md-offset-1">
@@ -641,9 +641,9 @@
                                             <p>
                                                 Responsibilities:
                                                 <br>
-                                                I serve as the Lead developer and primary point of contact for 3 active projects with 3 separate customers.  
+                                                I serve as the Lead developer and primary point of contact for 3 active projects with 3 separate customers.
                                                 I also serve as the development descipline lead for the contract, participating in senior management discussions
-                                                and setting development goals and standards for the contract.   
+                                                and setting development goals and standards for the contract.
                                             </p>
                                         </div>
                                         <!-- //.panel-body -->
@@ -679,8 +679,8 @@
                                             <p>
                                                 Responsibilities:
                                                 <br>
-                                                Designed and implemented new features for an online intern registration and selection (SOLAR) system.  
-                                                Provided architectural design support for the next version a large configuration management (CM) 
+                                                Designed and implemented new features for an online intern registration and selection (SOLAR) system.
+                                                Provided architectural design support for the next version a large configuration management (CM)
                                                 tool used by multiple flight projects at NASA's Goddard Space Flight Center (GSFC).
                                                 Assited with other applications as needed.
                                             </p>
@@ -898,7 +898,7 @@
                                                 <br>
                                                 As a Document Specialist I provided a number of duties including creating layouts and posters
                                                 using Photoshop, Illustrator and PageMaker.  I also maintined inventory using an application I
-                                                created in Microsoft Excel. 
+                                                created in Microsoft Excel.
                                             </p>
                                         </div>
                                         <!-- //.panel-body -->
@@ -934,8 +934,8 @@
                                             <p>
                                                 Responsibilities:
                                                 <br>
-                                                Designed an created an application to request certificates.  Light PC trouble shooting for 
-                                                the Customer Service branch of the Multi-Media Office.  Created publication layouts using 
+                                                Designed an created an application to request certificates.  Light PC trouble shooting for
+                                                the Customer Service branch of the Multi-Media Office.  Created publication layouts using
                                                 PageMaker and Photoshop.
                                             </p>
                                         </div>
@@ -958,8 +958,8 @@
         <!-- //.container -->
     </section>
     <!-- //RESUME SECTION END -->
-    
-    
+
+
     <!-- REFERENCES SECTION START -->
     <section id="references" class="section bg-image-yes">
         <div class="container-fluid section-wrapper">
@@ -978,7 +978,7 @@
                     <!-- //.col-md-12 -->
                 </div>
                 <!-- //.row -->
-                
+
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1">
                         <div class="flexslider references">
@@ -1018,7 +1018,7 @@
                                             <h3>ASRC Inuteq (NASA)</h3>
 
                                             <p>
-                                                Andre has done a wonderful job leading the development team and encouraging them to grow in their knowledge. 
+                                                Andre has done a wonderful job leading the development team and encouraging them to grow in their knowledge.
                                             </p>
 
                                             <p class="source">
@@ -1075,8 +1075,8 @@
         <!-- //.container -->
     </section>
     <!-- //REFERENCES SECTION END -->
-    
-    
+
+
     <!-- SKILLS SECTION START -->
     <section id="skills" class="section">
         <div class="container section-wrapper">
@@ -1092,7 +1092,7 @@
                     <!-- //.col-md-8 -->
                 </div>
                 <!-- //.row -->
-                
+
                 <!-- CIRCLE CHART START -->
                 <div class="circle-chart">
                     <div class="row">
@@ -1194,8 +1194,8 @@
         <!-- //.container -->
     </section>
     <!-- //SKILLS SECTION END -->
-    
-    
+
+
     <!-- KNOWLEDGE SECTION START -->
     <section id="knowledge" class="section">
         <div class="container section-wrapper">
@@ -1211,7 +1211,7 @@
                     <!-- //.col-md-8 -->
                 </div>
                 <!-- //.row -->
-                
+
                 <!-- BAR CHART START -->
                 <div class="row">
                     <div class="col-sm-6 col-md-6">
@@ -1275,11 +1275,11 @@
             <!-- //.section-content -->
         </div>
         <!-- //.container -->
-        
+
     </section>
     <!-- //KNOWLEDGE SECTION END -->
-    
-    
+
+
     <!-- ACCOLADES SECTION START -->
     <section id="accolades" class="section">
         <div class="container section-wrapper">
@@ -1295,7 +1295,7 @@
                     <!-- //.col-md-8 -->
                 </div>
                 <!-- //.row -->
-                
+
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3">
 
@@ -1365,8 +1365,8 @@
         <!-- //.container -->
     </section>
     <!-- //ACCOLADES SECTION END -->
-    
-    
+
+
     <!-- MILESTONES SECTION START -->
     <section id="milestones" class="section bg-image-yes">
         <div class="container-fluid section-wrapper">
@@ -1382,7 +1382,7 @@
                     <!-- //.col-md-8 -->
                 </div>
                 <!-- //.row -->
-                
+
                 <!-- MILESTONES START -->
                 <div class="milestones">
                     <div class="row">
@@ -1392,7 +1392,7 @@
                             </div>
                             <!-- //.circle -->
 
-                            <span class="number" data-from="1" data-to="10" data-refresh-interval="1">
+                            <span class="number" data-from="1" data-to="{{yearsOfNASAExperience}}" data-refresh-interval="1.5">
                                 1 Years
                             </span>
 
@@ -1406,7 +1406,7 @@
                             </div>
                             <!-- //.circle -->
 
-                            <span class="number" data-from="0" data-to="68" data-refresh-interval="2">
+                            <span class="number" data-from="0" data-to="{{meetupsHosted}}" data-refresh-interval="2">
                                 0
                             </span>
 
@@ -1451,8 +1451,8 @@
         <!-- //.container -->
     </section>
     <!-- //MILESTONES SECTION END -->
-    
-    
+
+
     <!-- BLOG SECTION START -->
     <section id="blog" class="section">
         <div class="container section-wrapper">
@@ -1468,7 +1468,7 @@
                     <!-- //.col-md-8 -->
                 </div>
                 <!-- //.row -->
-                
+
                 <!-- BLOG POST START -->
                 <div class="row">
                     <div class="col-sm-6 col-md-4">
@@ -1497,7 +1497,7 @@
                     <!-- //.col-md-4 -->
 
 
-                    
+
                     <div class="col-sm-6 col-md-4">
                         <div class="blog-post">
                             <div class="post-media">
@@ -1524,7 +1524,7 @@
                         <!-- //.blog-post -->
                     </div>
                     <!-- //.col-md-4 -->
-                    
+
                     <div class="col-sm-6 col-md-4">
                         <div class="blog-post">
                             <div class="post-media">
@@ -1552,7 +1552,7 @@
 
                 </div>
                 <!-- //BLOG POST END -->
-                
+
                 <div class="row">
                     <div class="col-md-12">
                         <div class="launch text-center">
@@ -1569,8 +1569,8 @@
         <!-- //.container -->
     </section>
     <!-- //BLOG SECTION END -->
-    
-    
+
+
     <!-- WORK PROCESS SECTION START -->
     <section id="work-process" class="section">
         <div class="container section-wrapper">
@@ -1588,21 +1588,21 @@
                     <!-- //.col-md-12 -->
                 </div>
                 <!-- //.row -->
-                
+
                 <div class="row">
                     <div class="col-md-12">
                         <p class="text-grey text-justify">
-                            I'm always open to new processes and new ideas.  If you have suggestions 
-                            or processes that have worked for you and you would like to share reach out to me 
-                            <a href='https://twitter.com/Dreyoung79'>@DreYoung79</a>.  Below is a snapshot of how 
+                            I'm always open to new processes and new ideas.  If you have suggestions
+                            or processes that have worked for you and you would like to share reach out to me
+                            <a href='https://twitter.com/Dreyoung79'>@DreYoung79</a>.  Below is a snapshot of how
                             I handle my personal projects.
-                            
+
                         </p>
                     </div>
                     <!-- //.col-md-12 -->
                 </div>
                 <!-- //.row -->
-                
+
                 <!-- WORK PROCESS START -->
                 <div class="work-process">
                     <div class="row">
@@ -1683,7 +1683,7 @@
                     <!-- //.row -->
                 </div>
                 <!-- //WORK PROCESS END -->
-                
+
                 <div class="row">
                     <div class="col-md-12">
                         <p class="text-grey text-justify">
@@ -1699,8 +1699,8 @@
         <!-- //.container -->
     </section>
     <!-- //WORK PROCESS SECTION END -->
-    
-    
+
+
     <!-- CONTACT SECTION START -->
     <section id="contact" class="section">
         <div class="container section-wrapper">
@@ -1718,7 +1718,7 @@
                     <!-- //.col-md-12 -->
                 </div>
                 <!-- //.row -->
-                
+
                 <div class="row">
                     <div class="col-md-12">
 
@@ -1752,8 +1752,8 @@
         <!-- //.container -->
     </section>
     <!-- //CONTACT SECTION END -->
-    
-    
+
+
     <!-- FOOTER START -->
     <footer class="footer">
         <div class="container">
@@ -1763,7 +1763,7 @@
                         <a href="#page-top"><i class="icon-Arrow-Up"></i></a>
                     </div>
                     <!-- //.page-scroll -->
-                    
+
                     <ul class="list-inline social-icons">
                         <li>
                             <div class="item">
@@ -1771,21 +1771,21 @@
                             </div>
                             <!-- //.item -->
                         </li>
-                        
+
                         <li>
                             <div class="item">
                                 <a href="https://twitter.com/DreYoung79" target="_blank"><i class="fa fa-twitter"></i></a>
                             </div>
                             <!-- //.item -->
                         </li>
-                        
+
                         <li>
                             <div class="item">
                                 <a href="https://plus.google.com/113623224900399926286/posts" target="_blank"><i class="fa fa-google"></i></a>
                             </div>
                             <!-- //.item -->
                         </li>
-                        
+
                         <li>
                             <div class="item">
                                 <a href="https://github.com/youngaj" target="_blank"><i class="fa fa-github"></i></a>
@@ -1797,7 +1797,7 @@
                 <!-- //.col-md-12 -->
             </div>
             <!-- //.row -->
-            
+
             <div class="row">
                 <div class="col-md-12">
                     <div class="copyright text-center">
@@ -1812,8 +1812,8 @@
         <!-- //.container -->
     </footer>
     <!-- //FOOTER END -->
-    
-    
+
+
     <!-- Plugins JS -->
     <script src="assets/plugins/jquery.min.js"></script>
     <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
@@ -1827,12 +1827,23 @@
     <script src="assets/plugins/magnificPopup/jquery.magnific-popup.min.js"></script>
     <script src="assets/plugins/flexSlider/jquery.flexslider-min.js"></script>
     <script src="assets/plugins/countTo/jquery.countTo.js"></script>
-    
+    <script src="assets/plugins/moment/moment.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
-    
+
     <!-- Animation JS (Optional) -->
     <script src="assets/js/animation.js"></script>
+
+    <script type="text/javascript">
+        var app = angular.module("resumeApp", []);
+        app.controller("dataCntrl", function ($scope) {
+            $scope.age = moment().diff('1979-09-14', 'years');
+            $scope.yearsOfExperience = moment().diff('1999-06-1', 'years');
+            $scope.yearsOfNASAExperience =  moment().diff('2005-04-1', 'years');
+            $scope.meetupsHosted = moment().diff('2014-06-1', 'weeks')/2;
+        });
+    </script>
 
 </body>
 
