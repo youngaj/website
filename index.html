@@ -1519,21 +1519,23 @@
 
                 <!-- BLOG POST START -->
                 <div class="row">
-                    <div class="col-sm-6 col-md-4">
+                    <div class="col-sm-6 col-md-4" ng-repeat="video in videos" ng-click="goToVideo(video)">
                         <div class="blog-post">
                             <div class="post-media">
-                                <img src="assets/images/blog/csharp.png" class="img-responsive" alt=""/>
+                                <a ng-href="https://www.youtube.com/watch?v={{video.id}}">
+                                    <img ng-src="{{video.thumbnails.high.url}}" class="img-responsive" alt="{{video.description}}" />
+                                </a>
                             </div>
                             <!-- //.post-media -->
 
                             <div class="post-meta match-height">
                                 <span class="date">
-                                    <span class="day">9</span> Jun 2017
+                                    <span class="day">{{video.day}}</span> {{video.monthYear}}
                                 </span>
 
                                 <div class="post-title">
                                     <h4>
-                                        <a href="https://www.youtube.com/watch?v=dOXP7q7Vv4E">GSFC Dev Group Talk - Introduction to C#</a>
+                                        <a ng-href="https://www.youtube.com/watch?v={{video.id}}">{{video.title}}</a>
                                     </h4>
                                 </div>
                                 <!-- //.post-title -->
@@ -1542,37 +1544,11 @@
                         </div>
                         <!-- //.blog-post -->
                     </div>
-                    <!-- //.col-md-4 -->
 
                     <div class="col-sm-6 col-md-4">
                         <div class="blog-post">
                             <div class="post-media">
-                                <img src="assets/images/blog/angular.png" class="img-responsive" alt="" />
-                            </div>
-                            <!-- //.post-media -->
-
-                            <div class="post-meta match-height">
-                                <span class="date">
-                                    <span class="day">22</span> July
-                                </span>
-
-                                <div class="post-title">
-                                    <h4>
-                                        <a href="https://www.youtube.com/watch?v=6iddTlbOEHE#t=2708.046959">GSFC Dev Group Talk - Angular 1.x</a>
-                                    </h4>
-                                </div>
-                                <!-- //.post-title -->
-                            </div>
-                            <!-- //.post-meta -->
-                        </div>
-                        <!-- //.blog-post -->
-                    </div>
-                <!-- //.col-md-4 -->
-
-                <div class="col-sm-6 col-md-4">
-                        <div class="blog-post">
-                            <div class="post-media">
-                                <img src="assets/images/blog/blog-2.png" class="img-responsive" alt=""/>
+                                <img src="assets/images/blog/blog-2.png" class="img-responsive" alt="" />
                             </div>
                             <!-- //.post-media -->
 
@@ -1597,7 +1573,7 @@
                     <div class="col-sm-6 col-md-4">
                         <div class="blog-post">
                             <div class="post-media">
-                                <img src="assets/images/blog/blog-1.jpg" class="img-responsive" alt=""/>
+                                <img src="assets/images/blog/blog-1.jpg" class="img-responsive" alt="" />
                             </div>
                             <!-- //.post-media -->
 
@@ -1624,7 +1600,7 @@
                     <div class="col-sm-6 col-md-4">
                         <div class="blog-post">
                             <div class="post-media">
-                                <img src="assets/images/blog/blog-image-2.jpg" class="img-responsive" alt=""/>
+                                <img src="assets/images/blog/blog-image-2.jpg" class="img-responsive" alt="" />
                             </div>
                             <!-- //.post-media -->
 
@@ -1933,11 +1909,28 @@
 
     <script type="text/javascript">
         var app = angular.module("resumeApp", []);
-        app.controller("dataCntrl", function ($scope) {
-            $scope.age = moment().diff('1979-09-14', 'years');
-            $scope.yearsOfExperience = moment().diff('1999-06-1', 'years');
-            $scope.yearsOfNASAExperience =  moment().diff('2005-04-1', 'years');
-            $scope.meetupsHosted = moment().diff('2014-06-1', 'weeks')/2;
+        app.controller("dataCntrl", function ($scope, $http) {
+
+            activate();
+
+            function activate(){
+                $scope.age = moment().diff('1979-09-14', 'years');
+                $scope.yearsOfExperience = moment().diff('1999-06-1', 'years');
+                $scope.yearsOfNASAExperience =  moment().diff('2005-04-1', 'years');
+                $scope.meetupsHosted = moment().diff('2014-06-1', 'weeks')/2;
+
+                return $http.get("https://gsfcdevgroup.azurewebsites.net/api/GetYouTubeVideos?code=VuX8S06PAXWSGatieHWgwfGWPqNke3biBahwxOvgKPxL8H5N3s0c0A==")
+                    .then(function (result) {
+                        for (let index = 0; index < result.data.length; index++) {
+                            var video = result.data[index];
+                            video.day = moment(video.publishedAt).format("DD");
+                            video.monthYear = moment(video.publishedAt).format("MMM YYYY");                            
+                        }
+                        $scope.videos = result.data;
+                        console.log(result.data);
+                });
+            }
+
         });
     </script>
 

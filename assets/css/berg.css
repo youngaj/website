@@ -2782,6 +2782,7 @@ button.mfp-arrow:active {
   border: 1px solid #3b3b3b;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
+  height: 120px;
 }
 
 #blog .blog-post > .post-meta > span.date {
