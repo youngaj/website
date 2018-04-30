@@ -1519,7 +1519,7 @@
 
                 <!-- BLOG POST START -->
                 <div class="row">
-                    <div class="col-sm-6 col-md-4" ng-repeat="video in videos" ng-click="goToVideo(video)">
+                    <div class="col-sm-6 col-md-4" ng-repeat="video in videos | orderBy:'-publishedAt'" ng-click="goToVideo(video)">
                         <div class="blog-post">
                             <div class="post-media">
                                 <a ng-href="https://www.youtube.com/watch?v={{video.id}}">
