@@ -1960,7 +1960,7 @@
                 $scope.yearsOfNASAExperience =  moment().diff('2005-04-1', 'years');
                 $scope.meetupsHosted = moment().diff('2014-06-1', 'weeks')/2;
 
-                return $http.get("https://gsfcdevgroup.azurewebsites.net/api/GetYouTubeVideos?code=VuX8S06PAXWSGatieHWgwfGWPqNke3biBahwxOvgKPxL8H5N3s0c0A==")
+                return $http.get("https://gsfcdevgroup.azurewebsites.net/api/GetGSFCDevGroupSessions")
                     .then(function (result) {
                         for (let index = 0; index < result.data.length; index++) {
                             var video = result.data[index];
