@@ -1,68 +1,74 @@
-<!doctype html>
+﻿<!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
 <head>
-    <meta charset="utf-8">
-    
+    <meta charset="utf-8" />
+
     <!-- Site Title -->
     <title>Andre Young Resume</title>
-    
-    <meta name="description" content="Andre Young Resume">
-    <meta name="keywords" content="andre, young, creative, resume, template">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    <meta name="description" content="Andre Young Resume" />
+    <meta name="keywords" content="andre, young, creative, resume, template" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
 
     <!-- Google Font -->
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
-    
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" type="text/css" />
+
     <!-- Bootstrap Core CSS -->
-    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
     <!-- Font icons CSS -->
-    <link href="assets/plugins/icons-mind/style.css" rel="stylesheet" type="text/css">
-    <link href="assets/plugins/fontawesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    
+    <link href="assets/plugins/icons-mind/style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/fontawesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
     <!-- Plugins CSS -->
-    <link href="assets/plugins/jpreloader/css/jpreloader.css" rel="stylesheet" type="text/css">
-    <link href="assets/plugins/animate-css/animate.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/plugins/magnificPopup/magnific-popup.css" rel="stylesheet" type="text/css">
-    <link href="assets/plugins/flexSlider/flexslider.css" rel="stylesheet" type="text/css">
-    
+    <link href="assets/plugins/jpreloader/css/jpreloader.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/animate-css/animate.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/magnificPopup/magnific-popup.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/flexSlider/flexslider.css" rel="stylesheet" type="text/css" />
+
     <!-- Main CSS -->
-    <link href="assets/css/berg.css" rel="stylesheet" type="text/css">
-    
+    <link href="assets/css/berg.css" rel="stylesheet" type="text/css" />
+
     <!-- Color CSS -->
     <!--<link href="assets/css/colors/green.css" rel="stylesheet" type="text/css">-->
-    
+
     <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 8]>
-    <script src="assets/plugins/modernizr.min.js"></script>
+      <script src="assets/plugins/modernizr.min.js"></script>
     <![endif]-->
 </head>
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="66">
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="66" ng-app="resumeApp"
+    ng-controller="dataCntrl">
     <!--[if lt IE 10]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+        your experience.
+      </p>
     <![endif]-->
 
-  
     <!-- HERO START -->
     <header id="home" class="hero">
         <div class="pattern-overlay"></div>
-        
+
         <div class="hero-body">
             <div class="hero-text text-center">
-                <h1 class="small">
-                    I'm Andre Young <span class="blinker"></span>
-                </h1>
-                
+                <h1 class="small">I'm Andre Young <span class="blinker"></span></h1>
+
                 <h1>Lead Developer</h1>
-                
-                <p>36 years young, husband and father, code addict.</p>
-                
+
+                <p>{{age}} years young, husband and father, code addict.</p>
+
                 <div class="page-scroll">
                     <a href="#profile" class="btn btn-lg btn-custom">
                         Know Me Better
@@ -75,8 +81,7 @@
         <!-- //.hero-body -->
     </header>
     <!-- //HERO END -->
-    
-    
+
     <!-- NAVIGATION START -->
     <nav id="navigation" class="navbar navbar-fixed-top center-menu" role="navigation">
         <div class="container navbar-container">
@@ -87,41 +92,41 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                
+
                 <a class="navbar-brand visible-xs visible-sm" href="#page-top">YOUNG</a>
             </div>
             <!-- //.navbar-header -->
-            
+
             <div class="navbar-collapse collapse berg-collapse">
                 <ul class="nav navbar-nav">
                     <li class="page-scroll">
                         <a href="#home">Home</a>
                     </li>
-                    
+
                     <li class="page-scroll">
                         <a href="#profile">Profile</a>
                     </li>
-                    
-                    <li class="page-scroll">
+
+                    <!--<li class="page-scroll">
                         <a href="#portfolio">Portfolio</a>
-                    </li>
-                    
+                    </li>-->
+
                     <li class="page-scroll">
                         <a href="#services">Services</a>
                     </li>
-                    
+
                     <li class="page-scroll">
                         <a href="#resume">Resume</a>
                     </li>
-                    
+
                     <li class="page-scroll">
                         <a href="#skills">Skills</a>
                     </li>
-                    
+
                     <li class="page-scroll">
                         <a href="#blog">Blog</a>
                     </li>
-                    
+
                     <li class="page-scroll">
                         <a href="#contact">Contact</a>
                     </li>
@@ -132,37 +137,51 @@
         <!-- //.navbar-container -->
     </nav>
     <!-- //NAVIGATION END -->
-    
-    
+
     <!-- PROFILE SECTION START -->
     <section id="profile" class="section">
         <div class="container section-wrapper">
             <div class="section-content">
-                <div class="row">          
+                <div class="row">
                     <div class="col-md-7 match-height">
-
                         <!-- PROFILE TEXT START -->
                         <div class="profile-text padding-right-yes">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <h2 class="section-title uppercase">Hello, My Name is Andre.</h2>
+                                    <h2 class="section-title uppercase">
+                                        Hello, My Name is Andre.
+                                    </h2>
 
                                     <p>
-                                        Andre Young, 36 years young, born and grew up in the Washington D.C. metro area. Highly motivated lead developer with over 15 years of developmnet experience.
+                                        Andre Young, {{age}} years young, born and raised in the Washington D.C.
+                                        metro area. Highly motivated senior software engineering manager
+                                        and tech lead with over {{yearsOfExperience}} years of development experience.
                                     </p>
 
                                     <span class="divider"></span>
 
                                     <p class="text-grey">
-                                        I currently work at NASA's Goddard Space Flight Center, where I spend most of my time crafting and working on awesome projects.
+                                        As of April 2020 I started a new job with Capital One. Very excited
+                                        to be joining an awesome team doing awesome work!
                                     </p>
 
                                     <p class="text-grey">
-                                        I also run a bi-weekly developer meetup at NASA, where we discuss various developmnet topics ranging from code architecture to knowing how to say "No" to a customer
-                                        and having them say "thank you" afterwards.  I love development, love learning and sharing the things I've learned with anyone willing to listen.
-                                        
-                                        See my resume and other interests below.
+                                        Formerly I worked at NASA's Goddard Space Flight Center,
+                                        where I spent most of my time crafting and working on
+                                        cool (and sometimes important but not so cool) projects.
+                                    </p>
 
+                                    <p class="text-grey">
+                                        I also ran a bi-weekly developer meetup at NASA, where we
+                                        discussed various development topics ranging from code
+                                        architecture to knowing how to say "No" to a customer and
+                                        having them say "thank you" afterwards.
+                                    </p>
+
+                                    <p class="text-grey">
+                                        I love development, love learning and sharing the things I've
+                                        learned with anyone willing to listen. See my resume and
+                                        other interests below.
                                     </p>
                                 </div>
                                 <!-- //.col-md-12 -->
@@ -179,16 +198,28 @@
 
                                     <ul class="list-unstyled text-grey">
                                         <li>Andre Young</li>
-                                        <li>202 369 8494</li>
-                                        <li>AndreJYoung@gmail.com</li>
-                                        <li>www.andrejyoung.com</li>
-                                        <li>twitter: @DreYoung79</li>
+                                        <li>
+                                            <a href="mailto:AndreJYoung@gmail.com">AndreJYoung@gmail.com</a>
+                                        </li>
+                                        <li>
+                                            GitHub:
+                                            <a href="https://github.com/youngaj" target="_blank">youngaj</a>
+                                        </li>
+                                        <li>
+                                            Twitter:
+                                            <a href="https://twitter.com/DreYoung79" target="_blank">@DreYoung79</a>
+                                        </li>
+                                        <li>
+                                            YouTube:
+                                            <a href="https://www.youtube.com/channel/UCr-_BId5w_QTTKcthhNRVlw/videos"
+                                                target="_blank">youngaj</a>
+                                        </li>
                                     </ul>
                                 </div>
                                 <!-- //.col-md-5 -->
 
                                 <div class="col-sm-6 col-md-7">
-                                    <a href="assets/resume.docx" class="btn btn-lg btn-custom">
+                                    <a href="assets/Andre_Young_Resume.pdf" class="btn btn-lg btn-custom">
                                         <i class="icon-File-Download"></i> Download Resume
                                     </a>
                                 </div>
@@ -197,14 +228,13 @@
                             <!-- //.row -->
                         </div>
                         <!-- //CONTACT DETAILS END -->
-
                     </div>
                     <!-- //.col-md-7 -->
 
                     <!-- PROFILE PICTURE START -->
                     <div class="col-md-5 hidden-xs hidden-sm match-height pp-wrapper">
                         <div class="profile-picture style-one">
-                            <img src="assets/images/profile-1.jpg" alt="profile picture" class="img-responsive"/>
+                            <img src="assets/images/profile-1.jpg" alt="profile picture" class="img-responsive" />
                         </div>
                     </div>
                     <!-- //PROFILE PICTURE END -->
@@ -216,8 +246,7 @@
         <!-- //.container -->
     </section>
     <!-- //PROFILE SECTION END -->
-    
-    
+
     <!-- PORTFOLIO SECTION START -->
     <section id="portfolio" class="section">
         <div class="container-fluid section-wrapper">
@@ -226,220 +255,25 @@
                     <div class="col-md-12 text-center">
                         <h2 class="section-title uppercase">My Latest Work</h2>
 
-                        <p class="section-subtitle">Most of my work is proprietary but I'm looking to expand my open source portfolio soon.  Stay tuned!</p>
+                        <p class="section-subtitle">
+                            Most of my work is proprietary but I'm looking to expand my open
+                            source portfolio soon. Stay tuned!
+                        </p>
 
                         <span class="divider center"></span>
                     </div>
                     <!-- //.col-md-12 -->
                 </div>
                 <!-- //.row -->
-                
+
                 <!-- PORTFOLIO START -->
-                <div class="portfolio">
-                    <div class="row">
-                        <div class="item col-sm-6 col-md-3">
-                            <div class="project-wrapper">
-                                <div class="project-link">
-                                    <a href="assets/images/portfolio/project-image-1.jpg" class="zoom" title="Buzz Lightyear">
-                                        <i class="icon-Full-Screen"></i>
-                                    </a>
-
-                                    <a href="single-portfolio-1.html" class="external-link">
-                                        <i class="icon-Link"></i>
-                                    </a>
-                                </div>
-                                <!-- //.project-link -->
-
-                                <div class="project-title">
-                                    <h4>Buzz Lightyear</h4>
-                                </div>
-                                <!-- //.project-title -->
-
-                                <img src="assets/images/portfolio/project-image-1.jpg" alt="" class="img-responsive"/>
-                            </div>
-                            <!-- //.project-wrapper -->
-                        </div>
-                        <!-- //.item -->
-
-                        <div class="item col-sm-6 col-md-3">
-                            <div class="project-wrapper">
-                                <div class="project-link">
-                                    <a href="assets/images/portfolio/project-image-2.jpg" class="zoom" title="Robosam 3">
-                                        <i class="icon-Full-Screen"></i>
-                                    </a>
-
-                                    <a href="single-portfolio-2.html" class="external-link">
-                                        <i class="icon-Link"></i>
-                                    </a>
-                                </div>
-                                <!-- //.project-link -->
-
-                                <div class="project-title">
-                                    <h4>Robosam 3</h4>
-                                </div>
-                                <!-- //.project-title -->
-
-                                <img src="assets/images/portfolio/project-image-2.jpg" alt="" class="img-responsive"/>
-                            </div>
-                            <!-- //.project-wrapper -->
-                        </div>
-                        <!-- //.item -->
-
-                        <div class="item col-sm-6 col-md-3">
-                            <div class="project-wrapper">
-                                <div class="project-link">
-                                    <a href="assets/images/portfolio/project-image-3.jpg" class="zoom" title="Coke Man and Dog">
-                                        <i class="icon-Full-Screen"></i>
-                                    </a>
-
-                                    <a href="single-portfolio-1.html" class="external-link">
-                                        <i class="icon-Link"></i>
-                                    </a>
-                                </div>
-                                <!-- //.project-link -->
-
-                                <div class="project-title">
-                                    <h4>Coke Man and Dog</h4>
-                                </div>
-                                <!-- //.project-title -->
-
-                                <img src="assets/images/portfolio/project-image-3.jpg" alt="" class="img-responsive"/>
-                            </div>
-                            <!-- //.project-wrapper -->
-                        </div>
-                        <!-- //.item -->
-
-                        <div class="item col-sm-6 col-md-3">
-                            <div class="project-wrapper">
-                                <div class="project-link">
-                                    <a href="assets/images/portfolio/project-image-4.jpg" class="zoom" title="Speed Projects">
-                                        <i class="icon-Full-Screen"></i>
-                                    </a>
-
-                                    <a href="single-portfolio-2.html" class="external-link">
-                                        <i class="icon-Link"></i>
-                                    </a>
-                                </div>
-                                <!-- //.project-link -->
-
-                                <div class="project-title">
-                                    <h4>Speed Projects</h4>
-                                </div>
-                                <!-- //.project-title -->
-
-                                <img src="assets/images/portfolio/project-image-4.jpg" alt="" class="img-responsive"/>
-                            </div>
-                            <!-- //.project-wrapper -->
-                        </div>
-                        <!-- //.item -->
-
-                        <div class="item col-sm-6 col-md-3">
-                            <div class="project-wrapper">
-                                <div class="project-link">
-                                    <a href="assets/images/portfolio/project-image-5.jpg" class="zoom" title="Wooden Rhinoceros Beetle">
-                                        <i class="icon-Full-Screen"></i>
-                                    </a>
-
-                                    <a href="single-portfolio-1.html" class="external-link">
-                                        <i class="icon-Link"></i>
-                                    </a>
-                                </div>
-                                <!-- //.project-link -->
-
-                                <div class="project-title">
-                                    <h4>Wooden Rhinoceros Beetle</h4>
-                                </div>
-                                <!-- //.project-title -->
-
-                                <img src="assets/images/portfolio/project-image-5.jpg" alt="" class="img-responsive"/>
-                            </div>
-                            <!-- //.project-wrapper -->
-                        </div>
-                        <!-- //.item -->
-
-                        <div class="item col-sm-6 col-md-3">
-                            <div class="project-wrapper">
-                                <div class="project-link">
-                                    <a href="assets/images/portfolio/project-image-6.jpg" class="zoom" title="The First Encounter">
-                                        <i class="icon-Full-Screen"></i>
-                                    </a>
-
-                                    <a href="single-portfolio-2.html" class="external-link">
-                                        <i class="icon-Link"></i>
-                                    </a>
-                                </div>
-                                <!-- //.project-link -->
-
-                                <div class="project-title">
-                                    <h4>The First Encounter</h4>
-                                </div>
-                                <!-- //.project-title -->
-
-                                <img src="assets/images/portfolio/project-image-6.jpg" alt="" class="img-responsive"/>
-                            </div>
-                            <!-- //.project-wrapper -->
-                        </div>
-                        <!-- //.item -->
-
-                        <div class="item col-sm-6 col-md-3">
-                            <div class="project-wrapper">
-                                <div class="project-link">
-                                    <a href="assets/images/portfolio/project-image-7.jpg" class="zoom" title="Dead Pool">
-                                        <i class="icon-Full-Screen"></i>
-                                    </a>
-
-                                    <a href="single-portfolio-1.html" class="external-link">
-                                        <i class="icon-Link"></i>
-                                    </a>
-                                </div>
-                                <!-- //.project-link -->
-
-                                <div class="project-title">
-                                    <h4>Dead Pool</h4>
-                                </div>
-                                <!-- //.project-title -->
-
-                                <img src="assets/images/portfolio/project-image-7.jpg" alt="" class="img-responsive"/>
-                            </div>
-                            <!-- //.project-wrapper -->
-                        </div>
-                        <!-- //.item -->
-
-                        <div class="item col-sm-6 col-md-3">
-                            <div class="project-wrapper">
-                                <div class="project-link">
-                                    <a href="assets/images/portfolio/project-image-8.jpg" class="zoom" title="Rebus II">
-                                        <i class="icon-Full-Screen"></i>
-                                    </a>
-
-                                    <a href="single-portfolio-2.html" class="external-link">
-                                        <i class="icon-Link"></i>
-                                    </a>
-                                </div>
-                                <!-- //.project-link -->
-
-                                <div class="project-title">
-                                    <h4>Rebus II</h4>
-                                </div>
-                                <!-- //.project-title -->
-
-                                <img src="assets/images/portfolio/project-image-8.jpg" alt="" class="img-responsive"/>
-                            </div>
-                            <!-- //.project-wrapper -->
-                        </div>
-                        <!-- //.item -->
-                    </div>
-                    <!-- //.row -->
-                </div>
-                <!-- PORTFOLIO END -->
             </div>
             <!-- //.section-content -->
         </div>
         <!-- //.container-fluid -->
     </section>
     <!-- //PORTFOLIO SECTION END -->
-    
-    
+
     <!-- SERVICES SECTION START -->
     <section id="services" class="section">
         <div class="container section-wrapper">
@@ -449,7 +283,9 @@
                         <h2 class="section-title uppercase">What I'm Doing</h2>
 
                         <p class="section-subtitle">
-                            I love what I do. I take great pride in what I do. And I can't do something halfway, three-quarters, nine-tenths. If I'm going to do something, I go all the way.
+                            I love what I do. I take great pride in what I do. And I can't
+                            do something halfway, three-quarters, nine-tenths. If I'm going
+                            to do something, I go all the way.
                         </p>
 
                         <span class="divider center"></span>
@@ -457,7 +293,7 @@
                     <!-- //.col-md-8 -->
                 </div>
                 <!-- //.row -->
-            
+
                 <!-- SERVICES START -->
                 <div class="services">
                     <div class="row">
@@ -468,8 +304,10 @@
                                 <h4 class="uppercase">1. Strategy</h4>
 
                                 <p class="text-grey">
-                                    I've been told that one of my strongest points is my ability to sit with a customer, understand their requirements and offer meaningful suggestions.  
-                                    Key to a good strategy is the collaboration that comes from active listening and empathy.
+                                    I've been told that one of my strongest points is my ability
+                                    to sit with a customer, understand their requirements and
+                                    offer meaningful suggestions. Key to a good strategy is the
+                                    collaboration that comes from active listening and empathy.
                                 </p>
                             </div>
                             <!-- //.inner-content -->
@@ -483,8 +321,10 @@
                                 <h4 class="uppercase">2. Architecture Design</h4>
 
                                 <p class="text-grey">
-                                    The best stategy can fail without a good architectual design and execution.  I've designed a number of successful systems and even a few unsuccessful systems.
-                                    With each new deisgn a learn more.
+                                    The best stategy can fail without a good architectual design
+                                    and execution. I've designed a number of successful systems
+                                    and even a few unsuccessful systems. With each new deisgn a
+                                    learn more.
                                 </p>
                             </div>
                             <!-- //.inner-content -->
@@ -493,19 +333,21 @@
 
                         <div class="col-sm-4 col-md-4 item top dark-bg match-height">
                             <div class="inner-content">
-                                <i class=" icon-Transform-2 colored-text"></i>
+                                <i class="icon-Transform-2 colored-text"></i>
 
                                 <h4 class="uppercase">3. Web Design</h4>
 
                                 <p class="text-grey">
-                                    For customers and end users the user interface (UI) is the application.  A great architecture can be overshadowed if the UI and user experience has not been thought out
-                                    users will not get the value. 
+                                    For customers and end users the user interface (UI) is the
+                                    application. A great architecture can be overshadowed if the
+                                    UI and user experience has not been thought out users will
+                                    not get the value.
                                 </p>
                             </div>
                             <!-- //.inner-content -->
                         </div>
                         <!-- //.item -->
-                        
+
                         <div class="col-sm-4 col-md-4 item match-height">
                             <div class="inner-content">
                                 <i class="icon-Speach-Bubble3 colored-text"></i>
@@ -513,8 +355,9 @@
                                 <h4 class="uppercase">4. Group Leadership</h4>
 
                                 <p class="text-grey">
-                                    I have lead a bi-weekly developer group since late 2012.  
-                                    In order to bootstrap that group I have presented at roughhly 80% of those meetups and mentored several other developers.
+                                    I have lead a bi-weekly developer group since late 2012. In
+                                    order to bootstrap that group I have presented at roughhly
+                                    80% of those meetups and mentored several other developers.
                                 </p>
                             </div>
                             <!-- //.inner-content -->
@@ -528,7 +371,11 @@
                                 <h4 class="uppercase">5. Development</h4>
 
                                 <p class="text-grey">
-                                    I am currently developing several applications.
+                                    I am currently developing several applications. My
+                                    development stack of choice includes JavaScript, Angular.JS,
+                                    and BootStrap on the front end and ASP.NET (Web API C#), SQL
+                                    Server and Redis on the server side. I am also working on an
+                                    application using Node.js and TypeScript
                                 </p>
                             </div>
                             <!-- //.inner-content -->
@@ -542,8 +389,10 @@
                                 <h4 class="uppercase">6. Consulting</h4>
 
                                 <p class="text-grey">
-                                    In my career those far I have not done any consulting but I am looking for opportunities to expand into new horizons.  
-                                    If you see like what you see and think I can help you acheive your short or long term goals please reach out.
+                                    In my career thus far I have not done any consulting but I
+                                    am looking for opportunities to expand into new horizons. If
+                                    you like what you see and think I can help you acheive your
+                                    short or long term goals please reach out.
                                 </p>
                             </div>
                             <!-- //.inner-content -->
@@ -559,27 +408,28 @@
         <!-- //.container -->
     </section>
     <!-- //SERVICES SECTION END -->
-    
-    
-    <!-- STRENGHTS SECTION START -->
-    <section id="strenghts" class="section bg-image-yes">
+
+    <!-- STRENGTHS SECTION START -->
+    <section id="strengths" class="section bg-image-yes">
         <div class="container-fluid section-wrapper">
             <div class="section-content">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 text-center">
-                        <h2 class="section-title uppercase">My Strenghts</h2>
+                        <h2 class="section-title uppercase">My Strengths</h2>
 
-                        <p class="section-subtitle">Failure will never overtake me if my determination to succeed is strong enough.</p>
+                        <p class="section-subtitle">
+                            Failure will never overtake me if my determination to succeed is
+                            strong enough.
+                        </p>
 
                         <span class="divider center"></span>
                     </div>
                     <!-- //.col-md-8 -->
                 </div>
                 <!-- //.row -->
-                
+
                 <div class="row">
                     <div class="col-md-12">
-
                         <!-- COLUMN CHART START -->
                         <div class="column-chart">
                             <div class="legend legend-left hidden-xs">
@@ -675,12 +525,10 @@
                                     <!-- //.bar -->
                                 </div>
                                 <!-- //.item -->
-                                
                             </div>
                             <!-- //.chart -->
                         </div>
                         <!-- //COLUMN CHART END -->
-
                     </div>
                     <!-- //.col-md-12 -->
                 </div>
@@ -690,9 +538,8 @@
         </div>
         <!-- //.container -->
     </section>
-    <!-- //STRENGHTS SECTION END -->
-    
-    
+    <!-- //STRENGTHS SECTION END -->
+
     <!-- RESUME SECTION START -->
     <section id="resume" class="section">
         <div class="container section-wrapper">
@@ -702,7 +549,8 @@
                         <h2 class="section-title uppercase">My Resume</h2>
 
                         <p class="section-subtitle">
-                            I have a strong belief that you should never stop learning.  Below lists my formal education.
+                            I have a strong belief that you should never stop learning.
+                            Below lists my formal education.
                         </p>
 
                         <span class="divider center"></span>
@@ -710,20 +558,18 @@
                     <!-- //.col-md-8 -->
                 </div>
                 <!-- //.row -->
-                
+
                 <!-- EDUCATION START -->
                 <div class="row education">
                     <div class="col-md-10 col-md-offset-1">
                         <h3>
                             My Education
-                            <br>
-                            1997 - 2002
                         </h3>
 
                         <div class="panel-group resume" id="education">
                             <div class="resume-item">
                                 <div class="resume-year">
-                                    <span class="resume-year">2010 - 2012</span>
+                                    <span class="resume-year">1997 - 2002</span>
                                 </div>
                                 <!-- //.resume-year -->
 
@@ -735,7 +581,9 @@
                                 <div class="panel">
                                     <div class="panel-heading">
                                         <div class="panel-title">
-                                            <h4 class="resume-title">Bachelors Degree - University of Maryland</h4>
+                                            <h4 class="resume-title">
+                                                Bachelors Degree - University of Maryland
+                                            </h4>
                                         </div>
                                         <!-- //.panel-title -->
                                     </div>
@@ -744,9 +592,11 @@
                                     <div id="education1" class="panel-collapse collapse in">
                                         <div class="panel-body text-grey">
                                             <p>
-                                                I graduated from the Univeristy of Maryland, College Park (UMCP) with a Bachelors of Science for Computer Science.  
-                                                I loved my time at the UMCP.  There I learned many foundational principles and the work ethic and determination that
-                                                has propelled me through my career.
+                                                I graduated from the Univeristy of Maryland, College
+                                                Park (UMCP) with a Bachelors of Science for Computer
+                                                Science. I loved my time at UMCP. There I learned many
+                                                foundational principles and the work ethic and
+                                                determination that has propelled me through my career.
                                             </p>
                                         </div>
                                         <!-- //.panel-body -->
@@ -764,14 +614,17 @@
                                 <!-- //.resume-year -->
 
                                 <div class="resume-btn">
-                                    <a href="#education2" class="collapsed" data-toggle="collapse" data-parent="#education"></a>
+                                    <a href="#education2" class="collapsed" data-toggle="collapse"
+                                        data-parent="#education"></a>
                                 </div>
                                 <!-- //.resume-btn -->
 
                                 <div class="panel">
                                     <div class="panel-heading">
                                         <div class="panel-title">
-                                            <h4 class="resume-title">High School Diploma - High Point High School</h4>
+                                            <h4 class="resume-title">
+                                                High School Diploma - High Point High School
+                                            </h4>
                                         </div>
                                         <!-- //.panel-title -->
                                     </div>
@@ -780,7 +633,8 @@
                                     <div id="education2" class="panel-collapse collapse">
                                         <div class="panel-body text-grey">
                                             <p>
-                                                High School was the place that I discoverd my love for programming.  
+                                                High School was the place that I discoverd my love for
+                                                programming.
                                             </p>
                                         </div>
                                         <!-- //.panel-body -->
@@ -796,20 +650,58 @@
                     <!-- //.col-md-10 -->
                 </div>
                 <!-- //EDUCATION END -->
-            
+
                 <!-- WORK EXPERIENCE START -->
                 <div class="row work-experience">
                     <div class="col-md-10 col-md-offset-1">
                         <h3>
                             Work Experience
-                            <br>
+                            <br />
                             1999 - Now
                         </h3>
 
                         <div class="panel-group resume" id="work">
                             <div class="resume-item">
                                 <div class="resume-year">
-                                    <span class="resume-year">2012 - Now</span>
+                                    <span class="resume-year">2020 - Now</span>
+                                </div>
+                                <!-- //.resume-year -->
+
+                                <div class="resume-btn">
+                                    <a href="#work0" data-toggle="collapse" data-parent="#work"></a>
+                                </div>
+                                <!-- //.resume-btn -->
+
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        <div class="panel-title">
+                                            <h4 class="resume-title">
+                                                Senior Manager, Software Envineering - Capital One
+                                            </h4>
+                                        </div>
+                                        <!-- //.panel-title -->
+                                    </div>
+                                    <!-- //.panel-heading -->
+
+                                    <div id="work0" class="panel-collapse collapse in">
+                                        <div class="panel-body text-grey">
+                                            <p>
+                                                Responsibilities:
+                                                <br />
+                                                Technical lead for a new project. Still getting up to
+                                                speed but enjoying my new team!
+                                            </p>
+                                        </div>
+                                        <!-- //.panel-body -->
+                                    </div>
+                                    <!-- //.panel-collapse -->
+                                </div>
+                                <!-- //.panel -->
+                            </div>
+
+                            <div class="resume-item">
+                                <div class="resume-year">
+                                    <span class="resume-year">2012 - 2020</span>
                                 </div>
                                 <!-- //.resume-year -->
 
@@ -821,7 +713,9 @@
                                 <div class="panel">
                                     <div class="panel-heading">
                                         <div class="panel-title">
-                                            <h4 class="resume-title">Lead Developer - ASRC Inuteq (NASA) </h4>
+                                            <h4 class="resume-title">
+                                                IT & Applicaiton Development Lead - ASRC Inuteq (NASA)
+                                            </h4>
                                         </div>
                                         <!-- //.panel-title -->
                                     </div>
@@ -831,10 +725,37 @@
                                         <div class="panel-body text-grey">
                                             <p>
                                                 Responsibilities:
-                                                <br>
-                                                I serve as the Lead developer and primary point of contact for 3 active projects with 3 separate customers.  
-                                                I also serve as the development descipline lead for the contract, participating in senior management discussions
-                                                and setting development goals and standards for the contract.   
+                                                <br />
+                                                <ul>
+                                                    <li>
+                                                        I served as the Application Development Lead for the
+                                                        contract, participating in senior management
+                                                        discussions and setting development goals and
+                                                        standards for the contract.
+                                                    </li>
+                                                    <li>
+                                                        I mentored developers at
+                                                        all levels, providing feedback on code and career
+                                                        coaching.
+                                                    </li>
+                                                    <li>
+                                                        I also served as the Lead developer and
+                                                        primary point of contact for 5 active projects with 3
+                                                        separate customers including a redesign and
+                                                        replatforming of the
+                                                        <a href="https://esc.gsfc.nasa.gov/" target="_blank">Exploration
+                                                            & Space Communications (ESC)</a>
+                                                        public website from Drupal to Gatsby, NodeJS and
+                                                        ASP.NET Core.
+                                                    </li>
+                                                    <li>
+                                                        Lastly I served as the IT manager for
+                                                        the Exploration & Space Communications Division (Code
+                                                        450) managing both development and operation
+                                                        activities.
+                                                    </li>
+                                                </ul>
+
                                             </p>
                                         </div>
                                         <!-- //.panel-body -->
@@ -859,7 +780,9 @@
                                 <div class="panel">
                                     <div class="panel-heading">
                                         <div class="panel-title">
-                                            <h4 class="resume-title">Senior Application Developer - ASRC PRIMUS (NASA)</h4>
+                                            <h4 class="resume-title">
+                                                Senior Application Developer - ASRC PRIMUS (NASA)
+                                            </h4>
                                         </div>
                                         <!-- //.panel-title -->
                                     </div>
@@ -869,11 +792,14 @@
                                         <div class="panel-body text-grey">
                                             <p>
                                                 Responsibilities:
-                                                <br>
-                                                Designed and implemented new features for an online intern registration and selection (SOLAR) system.  
-                                                Provided architectural design support for the next version a large configuration management (CM) 
-                                                tool used by multiple flight projects at NASA's Goddard Space Flight Center (GSFC).
-                                                Assited with other applications as needed.
+                                                <br />
+                                                Designed and implemented new features for an online
+                                                intern registration and selection (SOLAR) system.
+                                                Provided architectural design support for the next
+                                                version a large configuration management (CM) tool
+                                                used by multiple flight projects at NASA's Goddard
+                                                Space Flight Center (GSFC). Assited with other
+                                                applications as needed.
                                             </p>
                                         </div>
                                         <!-- //.panel-body -->
@@ -898,7 +824,9 @@
                                 <div class="panel">
                                     <div class="panel-heading">
                                         <div class="panel-title">
-                                            <h4 class="resume-title">Senior Programmer - ASRC Federal (NASA)</h4>
+                                            <h4 class="resume-title">
+                                                Senior Programmer - ASRC Federal (NASA)
+                                            </h4>
                                         </div>
                                         <!-- //.panel-title -->
                                     </div>
@@ -908,8 +836,10 @@
                                         <div class="panel-body text-grey">
                                             <p>
                                                 Responsibilities:
-                                                <br>
-                                                Tailored large scaled CM applications written primarily in Classic ASP to meet changing user requirements and needs.
+                                                <br />
+                                                Tailored large scaled CM applications written
+                                                primarily in Classic ASP to meet changing user
+                                                requirements and needs.
                                             </p>
                                         </div>
                                         <!-- //.panel-body -->
@@ -934,7 +864,9 @@
                                 <div class="panel">
                                     <div class="panel-heading">
                                         <div class="panel-title">
-                                            <h4 class="resume-title">Software Engineer - Systems Management Engineering Inc</h4>
+                                            <h4 class="resume-title">
+                                                Software Engineer - Systems Management Engineering Inc
+                                            </h4>
                                         </div>
                                         <!-- //.panel-title -->
                                     </div>
@@ -944,8 +876,11 @@
                                         <div class="panel-body text-grey">
                                             <p>
                                                 Responsibilities:
-                                                <br>
-                                                Redesign of brand guidelines and standards microsite, design of departmental logo lock-ups, photography of products for marketing collateral, design of corporate Twitter layout.
+                                                <br />
+                                                Redesign of brand guidelines and standards microsite,
+                                                design of departmental logo lock-ups, photography of
+                                                products for marketing collateral, design of corporate
+                                                Twitter layout.
                                             </p>
                                         </div>
                                         <!-- //.panel-body -->
@@ -962,25 +897,29 @@
                                 <!-- //.resume-year -->
 
                                 <div class="resume-btn">
-                                    <a href="#work4" class="collapsed" data-toggle="collapse" data-parent="#work"></a>
+                                    <a href="#work5" class="collapsed" data-toggle="collapse" data-parent="#work"></a>
                                 </div>
                                 <!-- //.resume-btn -->
 
                                 <div class="panel">
                                     <div class="panel-heading">
                                         <div class="panel-title">
-                                            <h4 class="resume-title">Programmer - SGT Inc. (NASA)</h4>
+                                            <h4 class="resume-title">
+                                                Programmer - SGT Inc. (NASA)
+                                            </h4>
                                         </div>
                                         <!-- //.panel-title -->
                                     </div>
                                     <!-- //.panel-heading -->
 
-                                    <div id="work4" class="panel-collapse collapse">
+                                    <div id="work5" class="panel-collapse collapse">
                                         <div class="panel-body text-grey">
                                             <p>
                                                 Responsibilities:
-                                                <br>
-                                                Tailored large scaled CM applications written primarily in Classic ASP to meet changing user requirements and needs.
+                                                <br />
+                                                Tailored large scaled CM applications written
+                                                primarily in Classic ASP to meet changing user
+                                                requirements and needs.
                                             </p>
                                         </div>
                                         <!-- //.panel-body -->
@@ -997,25 +936,29 @@
                                 <!-- //.resume-year -->
 
                                 <div class="resume-btn">
-                                    <a href="#work4" class="collapsed" data-toggle="collapse" data-parent="#work"></a>
+                                    <a href="#work6" class="collapsed" data-toggle="collapse" data-parent="#work"></a>
                                 </div>
                                 <!-- //.resume-btn -->
 
                                 <div class="panel">
                                     <div class="panel-heading">
                                         <div class="panel-title">
-                                            <h4 class="resume-title">ASP Programmer - PRISM Inc (NASA)</h4>
+                                            <h4 class="resume-title">
+                                                ASP Programmer - PRISM Inc (NASA)
+                                            </h4>
                                         </div>
                                         <!-- //.panel-title -->
                                     </div>
                                     <!-- //.panel-heading -->
 
-                                    <div id="work4" class="panel-collapse collapse">
+                                    <div id="work6" class="panel-collapse collapse">
                                         <div class="panel-body text-grey">
                                             <p>
                                                 Responsibilities:
-                                                <br>
-                                                Redesign of brand guidelines and standards microsite, design of departmental logo lock-ups, photography of products for marketing collateral, design of corporate Twitter layout.
+                                                <br />
+                                                Tailored large scaled CM applications written
+                                                primarily in Classic ASP to meet changing user
+                                                requirements and needs.
                                             </p>
                                         </div>
                                         <!-- //.panel-body -->
@@ -1033,25 +976,31 @@
                                 <!-- //.resume-year -->
 
                                 <div class="resume-btn">
-                                    <a href="#work4" class="collapsed" data-toggle="collapse" data-parent="#work"></a>
+                                    <a href="#work7" class="collapsed" data-toggle="collapse" data-parent="#work"></a>
                                 </div>
                                 <!-- //.resume-btn -->
 
                                 <div class="panel">
                                     <div class="panel-heading">
                                         <div class="panel-title">
-                                            <h4 class="resume-title">Programmer Viatech Inc. (Dept of State)</h4>
+                                            <h4 class="resume-title">
+                                                Programmer Viatech Inc. (Dept of State)
+                                            </h4>
                                         </div>
                                         <!-- //.panel-title -->
                                     </div>
                                     <!-- //.panel-heading -->
 
-                                    <div id="work4" class="panel-collapse collapse">
+                                    <div id="work7" class="panel-collapse collapse">
                                         <div class="panel-body text-grey">
                                             <p>
                                                 Responsibilities:
-                                                <br>
-                                                Redesign of brand guidelines and standards microsite, design of departmental logo lock-ups, photography of products for marketing collateral, design of corporate Twitter layout.
+                                                <br />
+                                                Designed, developed, tested, and deployed several
+                                                applications in support of the Multi-Media Services
+                                                Office of the Department of state. Applications varied
+                                                from web applications to applications that ran from a
+                                                CD-ROM.
                                             </p>
                                         </div>
                                         <!-- //.panel-body -->
@@ -1069,25 +1018,31 @@
                                 <!-- //.resume-year -->
 
                                 <div class="resume-btn">
-                                    <a href="#work4" class="collapsed" data-toggle="collapse" data-parent="#work"></a>
+                                    <a href="#work8" class="collapsed" data-toggle="collapse" data-parent="#work"></a>
                                 </div>
                                 <!-- //.resume-btn -->
 
                                 <div class="panel">
                                     <div class="panel-heading">
                                         <div class="panel-title">
-                                            <h4 class="resume-title">Document Specialist - Viatech Inc (Dept. Of State)</h4>
+                                            <h4 class="resume-title">
+                                                Document Specialist - Viatech Inc (Dept. Of State)
+                                            </h4>
                                         </div>
                                         <!-- //.panel-title -->
                                     </div>
                                     <!-- //.panel-heading -->
 
-                                    <div id="work4" class="panel-collapse collapse">
+                                    <div id="work8" class="panel-collapse collapse">
                                         <div class="panel-body text-grey">
                                             <p>
                                                 Responsibilities:
-                                                <br>
-                                                Redesign of brand guidelines and standards microsite, design of departmental logo lock-ups, photography of products for marketing collateral, design of corporate Twitter layout.
+                                                <br />
+                                                As a Document Specialist I provided a number of duties
+                                                including creating layouts and posters using
+                                                Photoshop, Illustrator and PageMaker. I also maintined
+                                                inventory using an application I created in Microsoft
+                                                Excel.
                                             </p>
                                         </div>
                                         <!-- //.panel-body -->
@@ -1105,25 +1060,31 @@
                                 <!-- //.resume-year -->
 
                                 <div class="resume-btn">
-                                    <a href="#work4" class="collapsed" data-toggle="collapse" data-parent="#work"></a>
+                                    <a href="#work9" class="collapsed" data-toggle="collapse" data-parent="#work"></a>
                                 </div>
                                 <!-- //.resume-btn -->
 
                                 <div class="panel">
                                     <div class="panel-heading">
                                         <div class="panel-title">
-                                            <h4 class="resume-title">Student Intern - Department of State</h4>
+                                            <h4 class="resume-title">
+                                                Student Intern - Department of State
+                                            </h4>
                                         </div>
                                         <!-- //.panel-title -->
                                     </div>
                                     <!-- //.panel-heading -->
 
-                                    <div id="work4" class="panel-collapse collapse">
+                                    <div id="work9" class="panel-collapse collapse">
                                         <div class="panel-body text-grey">
                                             <p>
                                                 Responsibilities:
-                                                <br>
-                                                Redesign of brand guidelines and standards microsite, design of departmental logo lock-ups, photography of products for marketing collateral, design of corporate Twitter layout.
+                                                <br />
+                                                Designed an created an application to request
+                                                certificates. Light PC trouble shooting for the
+                                                Customer Service branch of the Multi-Media Office.
+                                                Created publication layouts using PageMaker and
+                                                Photoshop.
                                             </p>
                                         </div>
                                         <!-- //.panel-body -->
@@ -1145,8 +1106,7 @@
         <!-- //.container -->
     </section>
     <!-- //RESUME SECTION END -->
-    
-    
+
     <!-- REFERENCES SECTION START -->
     <section id="references" class="section bg-image-yes">
         <div class="container-fluid section-wrapper">
@@ -1155,14 +1115,19 @@
                     <div class="col-md-12 text-center">
                         <h2 class="section-title uppercase">References</h2>
 
-                        <p class="section-subtitle">Testimonials are enough to convince people for now.</p>
+                        <p class="section-subtitle">
+                            Personal & professional recommendations are often the best way
+                            to find out about the true person.
+                            <br />
+                            Here are a few words people have to say about me.
+                        </p>
 
                         <span class="divider center"></span>
                     </div>
                     <!-- //.col-md-12 -->
                 </div>
                 <!-- //.row -->
-                
+
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1">
                         <div class="flexslider references">
@@ -1170,20 +1135,23 @@
                                 <div class="item">
                                     <div class="animated" data-animation-effect="flipInX">
                                         <div class="profile hidden-xs">
-                                            <img src="assets/images/references/profile-image-1.jpg" alt="" class="img-responsive img-circle img-thumbnail"/>
+                                            <img src="assets/images/references/ColleenPonton.png" alt=""
+                                                class="img-responsive img-circle img-thumbnail" />
                                         </div>
 
                                         <div class="content">
-                                            <h3>Lorena Group</h3>
+                                            <h3>ARSC Inuteq (NASA)</h3>
 
                                             <p>
-                                                "Young is officially the man! His level of professionalism and the understanding of the subject matter is the reason i will be looking forward to working with him in the future."
+                                                "Andre is a great communicator and problem solver. He
+                                                is the type of person you want to put in front of your
+                                                customers."
                                             </p>
 
                                             <p class="source">
-                                                Eka Sari Lorena
-                                                <br>
-                                                <span>President Director</span>
+                                                Colleen Ponton
+                                                <br />
+                                                <span>Integrated Program Team Lead</span>
                                             </p>
                                         </div>
                                         <!-- //.content -->
@@ -1195,20 +1163,22 @@
                                 <div class="item">
                                     <div class="animated" data-animation-effect="flipInX">
                                         <div class="profile hidden-xs">
-                                            <img src="assets/images/references/profile-image-2.jpg" alt="" class="img-responsive img-circle img-thumbnail"/>
+                                            <img src="assets/images/references/StevePadgett.jpg" alt=""
+                                                class="img-responsive img-circle img-thumbnail" />
                                         </div>
 
                                         <div class="content">
-                                            <h3>NET TV</h3>
+                                            <h3>ASRC Inuteq (NASA)</h3>
 
                                             <p>
-                                                "As always Young did an excellent job in just few hours. Great communication and fast excecution. Thanks for great work :)"
+                                                Andre has done a wonderful job leading the development
+                                                team and encouraging them to grow in their knowledge.
                                             </p>
 
                                             <p class="source">
-                                                Wishnutama Kusubandio
-                                                <br>
-                                                <span>CO-FOUNDER / CEO</span>
+                                                Steve Padgett
+                                                <br />
+                                                <span>Program Manager</span>
                                             </p>
                                         </div>
                                         <!-- //.content -->
@@ -1220,100 +1190,92 @@
                                 <div class="item">
                                     <div class="animated" data-animation-effect="flipInX">
                                         <div class="profile hidden-xs">
-                                            <img src="assets/images/references/profile-image-3.jpg" alt="" class="img-responsive img-circle img-thumbnail"/>
+                                            <img src="assets/images/references/JenPoston.jpg" alt=""
+                                                class="img-responsive img-circle img-thumbnail" />
                                         </div>
 
                                         <div class="content">
-                                            <h3>MNC Group</h3>
+                                            <h3>ARSC Inuteq (NASA)</h3>
 
                                             <p>
-                                                "As always, great creative thinking for the best solution. Young is by far the most professional and knowledgeable provider I worked with. I will hire him again :)"
+                                                Andre is a true mentor, he practices the different
+                                                ways of being a mentor, one on one, distance and
+                                                group. Andre serves as the alternate integrated
+                                                program team lead manager for the PAAC contract in
+                                                Code 480. Since taking on this role Andre has become a
+                                                very involved and valued mentor to all in 480. He
+                                                takes the time to listen to the problems, suggest
+                                                solutions and mentors one on one to find solutions.
+                                                His close guidance in furthering skill development for
+                                                his mentees not only led to increased job
+                                                satisfaction, but also diversified the division’s
+                                                skillset and improved work quality. He was able to do
+                                                this and keep morale up as team members were slowly
+                                                transitioned off due to tighter and tighter budgets.
+                                                Andre ensured that team members were not
+                                                oversubscribed and constantly communicated to check on
+                                                them and see if he could help in any way possible.
+                                                Andre saw a fellow team member at the center
+                                                struggling and taking 12 hours to complete a task, he
+                                                took the initiative and asked to help review the task
+                                                and due to the mentoring and collaboration he was able
+                                                to get the 12 hours reduced to 6 seconds this would
+                                                not have been accomplished without his skillful
+                                                technique and approach to mentoring and coaching. The
+                                                team members’ management was concerned about the
+                                                performance of the individual and with Andre helping
+                                                and stepping in the confidence and work product of the
+                                                individual was recognized and applauded for the short
+                                                turn around. Andre also serves as a functional lead
+                                                for application development on the PAAC contract. He
+                                                makes it a point each year to reach out and pair with
+                                                each programmer to learn his/her skillsets and offers
+                                                ideas on how to grow in coding and how he can help the
+                                                developers meet the goals that they set forth. He also
+                                                runs the very popular application development meeting
+                                                at the center for all application developers, security
+                                                personal, system administrators or anyone that is
+                                                interested in coding every other Friday. He uses this
+                                                meeting to help teach other developers and
+                                                collaborate/mentoring to give each developer a glimpse
+                                                of different ways to go and solve a problem. This
+                                                mentor venue itself has gathered a community of nearly
+                                                45 different developers from across center to
+                                                regularly attend and offer ideas. Andre’s greatest
+                                                accomplishments is communicating, providing thoughts
+                                                and ensuring that all he comes in contact with have
+                                                easy access to the tools, the community, for them to
+                                                do their job and grow as a person for this Andre Young
+                                                is truly deserving of the Flight Projects mentor
+                                                award.
                                             </p>
 
                                             <p class="source">
-                                                Hary Tanoesoedibjo
-                                                <br>
-                                                <span>President Director</span>
+                                                Jennifer Poston
+                                                <br />
+                                                <span>Integrated Program Team Lead</span>
                                             </p>
                                         </div>
                                         <!-- //.content -->
                                     </div>
                                     <!-- //.animated -->
                                 </div>
-                                <!-- //.item -->
-
-                                <div class="item">
-                                    <div class="animated" data-animation-effect="flipInX">
-                                        <div class="profile hidden-xs">
-                                            <img src="assets/images/references/profile-image-4.jpg" alt="" class="img-responsive img-circle img-thumbnail"/>
-                                        </div>
-
-                                        <div class="content">
-                                            <h3>CT Corp</h3>
-
-                                            <p>
-                                                "We called on Young to help us deliver on few projects with tight deadlines. He seamlessly integrated into our workflow and quickly became a key part of our team. Great job!"
-                                            </p>
-
-                                            <p class="source">
-                                                Chairul Tanjung
-                                                <br>
-                                                <span>Founder and Chairman</span>
-                                            </p>
-                                        </div>
-                                        <!-- //.content -->
-                                    </div>
-                                    <!-- //.animated -->
-                                </div>
-                                <!-- //.item -->
-
-                                <div class="item">
-                                    <div class="animated" data-animation-effect="flipInX">
-                                        <div class="profile hidden-xs">
-                                            <img src="assets/images/references/profile-image-5.jpg" alt="" class="img-responsive img-circle img-thumbnail"/>
-                                        </div>
-
-                                        <div class="content">
-                                            <h3>Mustika Ratu</h3>
-
-                                            <p>
-                                                "Young technical knowledge and branding experience came together and resulted in a site that is not only catching and interesting, but also one that is user-friendly. Thanks again."
-                                            </p>
-
-                                            <p class="source">
-                                                Mooryati Soedibyo
-                                                <br>
-                                                <span>President Director</span>
-                                            </p>
-                                        </div>
-                                        <!-- //.content -->
-                                    </div>
-                                    <!-- //.animated -->
-                                </div>
-                                <!-- //.item -->
                             </div>
                             <!-- //.slides -->
 
                             <div class="flexslider-controls">
                                 <ul class="flex-control-nav">
                                     <li>
-                                        <img src="assets/images/references/profile-image-1.jpg" alt="" class="img-responsive"/>
+                                        <img src="assets/images/references/StevePadgett.jpg" alt=""
+                                            class="img-responsive" />
                                     </li>
-
                                     <li>
-                                        <img src="assets/images/references/profile-image-2.jpg" alt="" class="img-responsive"/>
+                                        <img src="assets/images/references/ColleenPonton.png" alt=""
+                                            class="img-responsive" />
                                     </li>
-
                                     <li>
-                                        <img src="assets/images/references/profile-image-3.jpg" alt="" class="img-responsive"/>
-                                    </li>
-
-                                    <li>
-                                        <img src="assets/images/references/profile-image-4.jpg" alt="" class="img-responsive"/>
-                                    </li>
-
-                                    <li>
-                                        <img src="assets/images/references/profile-image-5.jpg" alt="" class="img-responsive"/>
+                                        <img src="assets/images/references/JenPoston.jpg" alt=""
+                                            class="img-responsive" />
                                     </li>
                                 </ul>
                             </div>
@@ -1344,8 +1306,7 @@
         <!-- //.container -->
     </section>
     <!-- //REFERENCES SECTION END -->
-    
-    
+
     <!-- SKILLS SECTION START -->
     <section id="skills" class="section">
         <div class="container section-wrapper">
@@ -1354,14 +1315,18 @@
                     <div class="col-md-8 col-md-offset-2 text-center">
                         <h2 class="section-title uppercase">Skills & Expertise</h2>
 
-                        <p class="section-subtitle">A winner is someone who recognizes his God-given talents, works his tail off to develop them into skills, and uses these skills to accomplish his goals.</p>
+                        <p class="section-subtitle">
+                            A winner is someone who recognizes his God-given talents, works
+                            his tail off to develop them into skills, and uses these skills
+                            to accomplish his goals.
+                        </p>
 
                         <span class="divider center"></span>
                     </div>
                     <!-- //.col-md-8 -->
                 </div>
                 <!-- //.row -->
-                
+
                 <!-- CIRCLE CHART START -->
                 <div class="circle-chart">
                     <div class="row">
@@ -1442,11 +1407,11 @@
                         <div class="col-sm-4 col-md-2">
                             <div class="item last">
                                 <div class="circle">
-                                    <span class="item-progress" data-percent="55"></span>
+                                    <span class="item-progress" data-percent="40"></span>
                                 </div>
                                 <!-- //.circle -->
 
-                                <span class="percent">55%</span>
+                                <span class="percent">40%</span>
 
                                 <h4 class="text-center uppercase">Node.js</h4>
                             </div>
@@ -1463,8 +1428,7 @@
         <!-- //.container -->
     </section>
     <!-- //SKILLS SECTION END -->
-    
-    
+
     <!-- KNOWLEDGE SECTION START -->
     <section id="knowledge" class="section">
         <div class="container section-wrapper">
@@ -1473,46 +1437,38 @@
                     <div class="col-md-8 col-md-offset-2 text-center">
                         <h2 class="section-title uppercase">Knowledge</h2>
 
-                        <p class="section-subtitle">Human behavior flows from three main sources: desire, emotion, and knowledge.</p>
+                        <p class="section-subtitle">
+                            Human behavior flows from three main sources: desire, emotion,
+                            and knowledge.
+                        </p>
 
                         <span class="divider center"></span>
                     </div>
                     <!-- //.col-md-8 -->
                 </div>
                 <!-- //.row -->
-                
+
                 <!-- BAR CHART START -->
                 <div class="row">
                     <div class="col-sm-6 col-md-6">
                         <div class="bar-chart">
                             <div class="item">
-                                <h4 class="uppercase">Brand Marketing</h4>
-
-                                <div class="bar">
-                                    <span class="percent">45%</span>
-                                    <span class="item-progress" data-percent="45"></span>
-                                </div>
-                                <!-- //.bar -->
-                            </div>
-                            <!-- //.item -->
-
-                            <div class="item">
                                 <h4 class="uppercase">Web Development</h4>
 
                                 <div class="bar">
-                                    <span class="percent">65%</span>
-                                    <span class="item-progress" data-percent="65"></span>
+                                    <span class="percent">75%</span>
+                                    <span class="item-progress" data-percent="75"></span>
                                 </div>
                                 <!-- //.bar -->
                             </div>
                             <!-- //.item -->
 
                             <div class="item">
-                                <h4 class="uppercase">Digital Design</h4>
+                                <h4 class="uppercase">Desktop Development</h4>
 
                                 <div class="bar">
-                                    <span class="percent">55%</span>
-                                    <span class="item-progress" data-percent="55"></span>
+                                    <span class="percent">30%</span>
+                                    <span class="item-progress" data-percent="30"></span>
                                 </div>
                                 <!-- //.bar -->
                             </div>
@@ -1525,33 +1481,22 @@
                     <div class="col-sm-6 col-md-6">
                         <div class="bar-chart">
                             <div class="item">
-                                <h4 class="uppercase">Brand Design</h4>
+                                <h4 class="uppercase">Mobile Development</h4>
 
                                 <div class="bar">
-                                    <span class="percent">45%</span>
-                                    <span class="item-progress" data-percent="45"></span>
+                                    <span class="percent">30%</span>
+                                    <span class="item-progress" data-percent="30"></span>
                                 </div>
                                 <!-- //.bar -->
                             </div>
                             <!-- //.item -->
 
                             <div class="item">
-                                <h4 class="uppercase">Internet Marketing</h4>
+                                <h4 class="uppercase">Web Design</h4>
 
                                 <div class="bar">
                                     <span class="percent">65%</span>
                                     <span class="item-progress" data-percent="65"></span>
-                                </div>
-                                <!-- //.bar -->
-                            </div>
-                            <!-- //.item -->
-
-                            <div class="item">
-                                <h4 class="uppercase">Video Editing</h4>
-
-                                <div class="bar">
-                                    <span class="percent">55%</span>
-                                    <span class="item-progress" data-percent="55"></span>
                                 </div>
                                 <!-- //.bar -->
                             </div>
@@ -1566,11 +1511,9 @@
             <!-- //.section-content -->
         </div>
         <!-- //.container -->
-        
     </section>
     <!-- //KNOWLEDGE SECTION END -->
-    
-    
+
     <!-- ACCOLADES SECTION START -->
     <section id="accolades" class="section">
         <div class="container section-wrapper">
@@ -1579,26 +1522,103 @@
                     <div class="col-md-8 col-md-offset-2 text-center">
                         <h2 class="section-title uppercase">Accolades</h2>
 
-                        <p class="section-subtitle">The accolades, just like the scrapes and bruises, fade in the end, and all you're left with is your ambition.</p>
+                        <p class="section-subtitle">
+                            The accolades, just like the scrapes and bruises, fade in the
+                            end, and all you're left with is your ambition.
+                        </p>
 
                         <span class="divider center"></span>
                     </div>
                     <!-- //.col-md-8 -->
                 </div>
                 <!-- //.row -->
-                
+
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3">
-
                         <!-- ACCOLADES START -->
                         <div class="accolades">
                             <div class="item">
                                 <i class="icon-Twitter"></i>
 
                                 <div class="content">
-                                    <h3>Marketing Excellence Awards 2014</h3>
+                                    <h3>
+                                        Flight Projects Directorate 2018 Peer Award for Excellence
+                                        as Mentor "Under Your Wing"
+                                    </h3>
 
-                                    <p class="text-grey">Excellence in Social Media Marketing</p>
+                                    <p class="text-grey">
+                                        For your extrodanerly concern and drive to ensure peers,
+                                        mentees and the community have the tool necessary to
+                                        succeed.
+                                    </p>
+                                </div>
+                                <!-- //.content -->
+                            </div>
+
+                            <div class="item">
+                                <i class="icon-Twitter"></i>
+
+                                <div class="content">
+                                    <h3>Certificate Of Appreciation - December 2014</h3>
+
+                                    <p class="text-grey">
+                                        In recognition of your continuous efforts to encourage the
+                                        software developers within Goddard Space Flight Center to
+                                        work collaboratively. Through your bi-weekly meetings
+                                        where developers share their code, tools, and best
+                                        practices, a new positive culture of learning has
+                                        flourished.
+                                    </p>
+                                </div>
+                                <!-- //.content -->
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <i class="icon-Twitter"></i>
+
+                                <div class="content">
+                                    <h3>Certificate Of Appreciation - December 2014</h3>
+
+                                    <p class="text-grey">
+                                        In recognition of your contribution and support as a
+                                        Mentor and participating in the PAAC III Mentorship
+                                        Program
+                                    </p>
+                                </div>
+                                <!-- //.content -->
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <i class="icon-Twitter"></i>
+
+                                <div class="content">
+                                    <h3>Certificate Of Appreciation - June 2014</h3>
+
+                                    <p class="text-grey">
+                                        In recognition of your continuous efforts to encourage the
+                                        software developers within Goddard Space Flight Center to
+                                        work collaboratively. Through your bi-weekly meetings
+                                        where developers share their code, tools, and best
+                                        practices, a new positive culture of learning has
+                                        flourished.
+                                    </p>
+                                </div>
+                                <!-- //.content -->
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <i class="icon-Twitter"></i>
+
+                                <div class="content">
+                                    <h3>Certificate Of Appreciation - 2003</h3>
+
+                                    <p class="text-grey">
+                                        In Recognition of your outstanding achievement in support
+                                        of the US Department of State Multi-Media Services
+                                    </p>
                                 </div>
                                 <!-- //.content -->
                             </div>
@@ -1608,9 +1628,11 @@
                                 <i class="icon-Idea-2"></i>
 
                                 <div class="content">
-                                    <h3>The "Big Idea" Competition 2012</h3>
+                                    <h3>Certificate Of Appreciation - 2002</h3>
 
-                                    <p class="text-grey">Top 3 Team</p>
+                                    <p class="text-grey">
+                                        We value very sincerely your dedication service.
+                                    </p>
                                 </div>
                                 <!-- //.content -->
                             </div>
@@ -1620,11 +1642,12 @@
                                 <i class="icon-Brush"></i>
 
                                 <div class="content">
-                                    <h3>Water Seven Art Directors Club Awards 2010</h3>
+                                    <h3>Franklin Award - 2002</h3>
 
-                                    <p class="text-grey">Finalist - Design</p>
-
-                                    <p class="text-grey">Finalist - Print Ad</p>
+                                    <p class="text-grey">
+                                        In recognition of your contributions to the success of the
+                                        Chile Declassification Project
+                                    </p>
                                 </div>
                                 <!-- //.content -->
                             </div>
@@ -1634,9 +1657,12 @@
                                 <i class="icon-Funky"></i>
 
                                 <div class="content">
-                                    <h3>Young Guns Award 2009</h3>
+                                    <h3>Franklin Award - 2000</h3>
 
-                                    <p class="text-grey">Finalist - Digital Campaign</p>
+                                    <p class="text-grey">
+                                        For dedicated performance that has led to improved
+                                        customer relations
+                                    </p>
                                 </div>
                                 <!-- //.content -->
                             </div>
@@ -1658,8 +1684,7 @@
         <!-- //.container -->
     </section>
     <!-- //ACCOLADES SECTION END -->
-    
-    
+
     <!-- MILESTONES SECTION START -->
     <section id="milestones" class="section bg-image-yes">
         <div class="container-fluid section-wrapper">
@@ -1668,14 +1693,17 @@
                     <div class="col-md-8 col-md-offset-2 text-center">
                         <h2 class="section-title uppercase">Milestones Achieved</h2>
 
-                        <p class="section-subtitle">My path has not been determined. I shall have more experiences and pass many more milestones.</p>
+                        <p class="section-subtitle">
+                            My path has not been determined. I shall have more experiences
+                            and pass many more milestones.
+                        </p>
 
                         <span class="divider center"></span>
                     </div>
                     <!-- //.col-md-8 -->
                 </div>
                 <!-- //.row -->
-                
+
                 <!-- MILESTONES START -->
                 <div class="milestones">
                     <div class="row">
@@ -1685,7 +1713,8 @@
                             </div>
                             <!-- //.circle -->
 
-                            <span class="number" data-from="1" data-to="10" data-refresh-interval="1">
+                            <span class="number" data-from="1" data-to="{{yearsOfNASAExperience}}"
+                                data-refresh-interval="1.5">
                                 1 Years
                             </span>
 
@@ -1699,7 +1728,7 @@
                             </div>
                             <!-- //.circle -->
 
-                            <span class="number" data-from="0" data-to="68" data-refresh-interval="2">
+                            <span class="number" data-from="0" data-to="{{meetupsHosted}}" data-refresh-interval="2">
                                 0
                             </span>
 
@@ -1744,8 +1773,7 @@
         <!-- //.container -->
     </section>
     <!-- //MILESTONES SECTION END -->
-    
-    
+
     <!-- BLOG SECTION START -->
     <section id="blog" class="section">
         <div class="container section-wrapper">
@@ -1754,31 +1782,61 @@
                     <div class="col-md-8 col-md-offset-2 text-center">
                         <h2 class="section-title uppercase">Latest From The Blog</h2>
 
-                        <p class="section-subtitle">Blogging is a great way to show your talents and interests to prospective employers, while adding an edge to your resume.</p>
+                        <p class="section-subtitle">
+                            Blogging is a great way to show your talents and interests to
+                            prospective employers, while adding an edge to your resume.
+                        </p>
 
                         <span class="divider center"></span>
                     </div>
                     <!-- //.col-md-8 -->
                 </div>
                 <!-- //.row -->
-                
+
                 <!-- BLOG POST START -->
                 <div class="row">
-                    <div class="col-sm-6 col-md-4">
+                    <div class="col-sm-6 col-md-4" ng-repeat="video in videos | orderBy:'-publishedAt'"
+                        ng-click="goToVideo(video)">
                         <div class="blog-post">
                             <div class="post-media">
-                                <img src="assets/images/blog/blog-image-1.jpg" class="img-responsive" alt=""/>
+                                <a ng-href="https://www.youtube.com/watch?v={{video.id}}">
+                                    <img ng-src="{{video.thumbnails.high.url}}" class="img-responsive"
+                                        alt="{{video.description}}" />
+                                </a>
                             </div>
                             <!-- //.post-media -->
 
                             <div class="post-meta match-height">
                                 <span class="date">
-                                    <span class="day">13</span> Sep
+                                    <span class="day">{{video.day}}</span> {{video.monthYear}}
                                 </span>
 
                                 <div class="post-title">
                                     <h4>
-                                        <a href="#">Facebook Wants to Own your Life, not Imitate Amazon</a>
+                                        <a ng-href="https://www.youtube.com/watch?v={{video.id}}">{{video.title}}</a>
+                                    </h4>
+                                </div>
+                                <!-- //.post-title -->
+                            </div>
+                            <!-- //.post-meta -->
+                        </div>
+                        <!-- //.blog-post -->
+                    </div>
+
+                    <div class="col-sm-6 col-md-4">
+                        <div class="blog-post">
+                            <div class="post-media">
+                                <img src="assets/images/blog/blog-2.png" class="img-responsive" alt="" />
+                            </div>
+                            <!-- //.post-media -->
+
+                            <div class="post-meta match-height">
+                                <span class="date"> <span class="day">17</span> Sep </span>
+
+                                <div class="post-title">
+                                    <h4>
+                                        <a href="http://andrejyoung.azurewebsites.net/post/hello-world-again">Hello
+                                            World... Again... and Again</a>
                                     </h4>
                                 </div>
                                 <!-- //.post-title -->
@@ -1792,18 +1850,20 @@
                     <div class="col-sm-6 col-md-4">
                         <div class="blog-post">
                             <div class="post-media">
-                                <img src="assets/images/blog/blog-image-2.jpg" class="img-responsive" alt=""/>
+                                <img src="assets/images/blog/blog-1.jpg" class="img-responsive" alt="" />
                             </div>
                             <!-- //.post-media -->
 
                             <div class="post-meta match-height">
-                                <span class="date">
-                                    <span class="day">21</span> Aug
-                                </span>
+                                <span class="date"> <span class="day">28</span> Jan </span>
 
                                 <div class="post-title">
                                     <h4>
-                                        <a href="#">Typekit Adds Hundreds of New Fonts to its Collection</a>
+                                        <a
+                                            href="http://darkmatterdevchronicle.blogspot.com/2015/01/the-restoration-project-from-monolith.html">
+                                            The Restoration Project... From Monolith Spaghetti
+                                            VbScript to ??
+                                        </a>
                                     </h4>
                                 </div>
                                 <!-- //.post-title -->
@@ -1817,93 +1877,18 @@
                     <div class="col-sm-6 col-md-4">
                         <div class="blog-post">
                             <div class="post-media">
-                                <img src="assets/images/blog/blog-image-3.jpg" class="img-responsive" alt=""/>
+                                <img src="assets/images/blog/blog-image-2.jpg" class="img-responsive" alt="" />
                             </div>
                             <!-- //.post-media -->
 
                             <div class="post-meta match-height">
-                                <span class="date">
-                                    <span class="day">09</span> Jul
-                                </span>
+                                <span class="date"> <span class="day">14</span> Sep </span>
 
                                 <div class="post-title">
                                     <h4>
-                                        <a href="#">20 Web Designs Built with Twitter Bootstrap Framework</a>
-                                    </h4>
-                                </div>
-                                <!-- //.post-title -->
-                            </div>
-                            <!-- //.post-meta -->
-                        </div>
-                        <!-- //.blog-post -->
-                    </div>
-                    <!-- //.col-md-4 -->
-
-                    <div class="col-sm-6 col-md-4">
-                        <div class="blog-post">
-                            <div class="post-media">
-                                <img src="assets/images/blog/blog-image-4.jpg" class="img-responsive" alt=""/>
-                            </div>
-                            <!-- //.post-media -->
-
-                            <div class="post-meta match-height">
-                                <span class="date">
-                                    <span class="day">16</span> Jun
-                                </span>
-
-                                <div class="post-title">
-                                    <h4>
-                                        <a href="#">5 Powerful Reasons Why SaaS Designers Need to Know SEO</a>
-                                    </h4>
-                                </div>
-                                <!-- //.post-title -->
-                            </div>
-                            <!-- //.post-meta -->
-                        </div>
-                        <!-- //.blog-post -->
-                    </div>
-                    <!-- //.col-md-4 -->
-
-                    <div class="col-sm-6 col-md-4">
-                        <div class="blog-post">
-                            <div class="post-media">
-                                <img src="assets/images/blog/blog-image-5.jpg" class="img-responsive" alt=""/>
-                            </div>
-                            <!-- //.post-media -->
-
-                            <div class="post-meta match-height">
-                                <span class="date">
-                                    <span class="day">28</span> May
-                                </span>
-
-                                <div class="post-title">
-                                    <h4>
-                                        <a href="#">Using the Web as a Designer Without Losing your Mind</a>
-                                    </h4>
-                                </div>
-                                <!-- //.post-title -->
-                            </div>
-                            <!-- //.post-meta -->
-                        </div>
-                        <!-- //.blog-post -->
-                    </div>
-                    <!-- //.col-md-4 -->
-
-                    <div class="col-sm-6 col-md-4">
-                        <div class="blog-post">
-                            <div class="post-media">
-                                <img src="assets/images/blog/blog-image-6.jpg" class="img-responsive" alt=""/>
-                            </div>
-                            <!-- //.post-media -->
-
-                            <div class="post-meta match-height">
-                                <span class="date">
-                                    <span class="day">14</span> May
-                                </span>
-
-                                <div class="post-title">
-                                    <h4>
-                                        <a href="#">Here’s Why Our Team Now Chooses their Own Salaries</a>
+                                        <a
+                                            href="http://darkmatterdevchronicle.blogspot.com/2014/09/chronicle-2-hiring-new-developer.html">Hiring
+                                            a new Developer</a>
                                     </h4>
                                 </div>
                                 <!-- //.post-title -->
@@ -1915,7 +1900,7 @@
                     <!-- //.col-md-4 -->
                 </div>
                 <!-- //BLOG POST END -->
-                
+
                 <div class="row">
                     <div class="col-md-12">
                         <div class="launch text-center">
@@ -1932,8 +1917,7 @@
         <!-- //.container -->
     </section>
     <!-- //BLOG SECTION END -->
-    
-    
+
     <!-- WORK PROCESS SECTION START -->
     <section id="work-process" class="section">
         <div class="container section-wrapper">
@@ -1951,17 +1935,21 @@
                     <!-- //.col-md-12 -->
                 </div>
                 <!-- //.row -->
-                
+
                 <div class="row">
                     <div class="col-md-12">
                         <p class="text-grey text-justify">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                            I'm always open to new processes and new ideas. If you have
+                            suggestions or processes that have worked for you and you would
+                            like to share reach out to me
+                            <a href="https://twitter.com/Dreyoung79">@DreYoung79</a>. Below
+                            is a snapshot of how I handle my personal projects.
                         </p>
                     </div>
                     <!-- //.col-md-12 -->
                 </div>
                 <!-- //.row -->
-                
+
                 <!-- WORK PROCESS START -->
                 <div class="work-process">
                     <div class="row">
@@ -2042,12 +2030,10 @@
                     <!-- //.row -->
                 </div>
                 <!-- //WORK PROCESS END -->
-                
+
                 <div class="row">
                     <div class="col-md-12">
-                        <p class="text-grey text-justify">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                        </p>
+                        <p class="text-grey text-justify"></p>
                     </div>
                     <!-- //.col-md-12 -->
                 </div>
@@ -2058,8 +2044,7 @@
         <!-- //.container -->
     </section>
     <!-- //WORK PROCESS SECTION END -->
-    
-    
+
     <!-- CONTACT SECTION START -->
     <section id="contact" class="section">
         <div class="container section-wrapper">
@@ -2077,26 +2062,27 @@
                     <!-- //.col-md-12 -->
                 </div>
                 <!-- //.row -->
-                
+
                 <div class="row">
                     <div class="col-md-12">
-
                         <!-- CONTACT DETAILS START -->
                         <div class="contact-details text-center">
                             <div class="speech-bubble">
                                 <i class="icon-Speach-Bubble11"></i>
 
-                                <h4 class="uppercase text-grey">
-                                    Say<br>Hello
-                                </h4>
+                                <h4 class="uppercase text-grey">Say<br />Hello</h4>
                             </div>
                             <!-- //.speech-bubble -->
 
                             <h2 class="uppercase">Andre <strong>Young</strong></h2>
 
-                            <h4 class="text-grey">AndreJYoung@gmail.com</h4>
+                            <h4 class="text-grey">
+                                <a href="mailto:AndreJYoung@gmail.com">AndreJYoung@gmail.com</a>
+                            </h4>
 
-                            <h4 class="text-grey">@DreYoung79</h4>
+                            <h4 class="text-grey">
+                                <a href="https://twitter.com/dreyoung79">@DreYoung79</a>
+                            </h4>
 
                             <span class="divider center"></span>
                         </div>
@@ -2111,8 +2097,7 @@
         <!-- //.container -->
     </section>
     <!-- //CONTACT SECTION END -->
-    
-    
+
     <!-- FOOTER START -->
     <footer class="footer">
         <div class="container">
@@ -2122,39 +2107,35 @@
                         <a href="#page-top"><i class="icon-Arrow-Up"></i></a>
                     </div>
                     <!-- //.page-scroll -->
-                    
+
                     <ul class="list-inline social-icons">
                         <li>
                             <div class="item">
-                                <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                                <a href="https://www.facebook.com/andre.young.184" target="_blank"><i
+                                        class="fa fa-facebook"></i></a>
                             </div>
                             <!-- //.item -->
                         </li>
-                        
+
                         <li>
                             <div class="item">
-                                <a href="https://twitter.com/DreYoung79" target="_blank"><i class="fa fa-twitter"></i></a>
+                                <a href="https://twitter.com/DreYoung79" target="_blank"><i
+                                        class="fa fa-twitter"></i></a>
                             </div>
                             <!-- //.item -->
                         </li>
-                        
+
                         <li>
                             <div class="item">
-                                <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                <a href="https://plus.google.com/113623224900399926286/posts" target="_blank"><i
+                                        class="fa fa-google"></i></a>
                             </div>
                             <!-- //.item -->
                         </li>
-                        
+
                         <li>
                             <div class="item">
-                                <a href="#" target="_blank"><i class="fa fa-dribbble"></i></a>
-                            </div>
-                            <!-- //.item -->
-                        </li>
-                        
-                        <li>
-                            <div class="item">
-                                <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
+                                <a href="https://github.com/youngaj" target="_blank"><i class="fa fa-github"></i></a>
                             </div>
                             <!-- //.item -->
                         </li>
@@ -2163,11 +2144,13 @@
                 <!-- //.col-md-12 -->
             </div>
             <!-- //.row -->
-            
+
             <div class="row">
                 <div class="col-md-12">
                     <div class="copyright text-center">
-                        <p class="text-grey">&copy; 2015 Andre Young. All rights reserved.</p>
+                        <p class="text-grey">
+                            &copy; 2015 Andre Young. All rights reserved.
+                        </p>
                     </div>
                     <!-- //.copyright -->
                 </div>
@@ -2178,8 +2161,7 @@
         <!-- //.container -->
     </footer>
     <!-- //FOOTER END -->
-    
-    
+
     <!-- Plugins JS -->
     <script src="assets/plugins/jquery.min.js"></script>
     <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
@@ -2193,13 +2175,41 @@
     <script src="assets/plugins/magnificPopup/jquery.magnific-popup.min.js"></script>
     <script src="assets/plugins/flexSlider/jquery.flexslider-min.js"></script>
     <script src="assets/plugins/countTo/jquery.countTo.js"></script>
-    
+    <script src="assets/plugins/moment/moment.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
-    
+
     <!-- Animation JS (Optional) -->
     <script src="assets/js/animation.js"></script>
 
+    <script type="text/javascript">
+        var app = angular.module("resumeApp", []);
+        app.controller("dataCntrl", function ($scope, $http) {
+            activate();
+
+            function activate() {
+                $scope.age = moment().diff("1979-09-14", "years");
+                $scope.yearsOfExperience = moment().diff("1999-06-1", "years");
+                $scope.yearsOfNASAExperience = moment().diff("2005-04-1", "years");
+                $scope.meetupsHosted = moment().diff("2014-06-1", "weeks") / 2;
+
+                return $http
+                    .get(
+                        "https://gsfcdevgroup.azurewebsites.net/api/GetGSFCDevGroupSessions"
+                    )
+                    .then(function (result) {
+                        for (let index = 0; index < result.data.length; index++) {
+                            var video = result.data[index];
+                            video.day = moment(video.publishedAt).format("DD");
+                            video.monthYear = moment(video.publishedAt).format("MMM YYYY");
+                        }
+                        $scope.videos = result.data;
+                        console.log(result.data);
+                    });
+            }
+        });
+    </script>
 </body>
 
 </html>

@@ -2771,6 +2771,8 @@ button.mfp-arrow:active {
 #blog .blog-post > .post-media img {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
+  height:200px;
+  width:100%;
 }
 
 #blog .blog-post > .post-meta {
@@ -2780,6 +2782,7 @@ button.mfp-arrow:active {
   border: 1px solid #3b3b3b;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
+  height: 120px;
 }
 
 #blog .blog-post > .post-meta > span.date {
