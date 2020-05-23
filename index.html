@@ -2284,9 +2284,9 @@
                     .get(
                         "https://andrepodcasts.azurewebsites.net/api/PodcastQueue"
                     )
-                    .then(function (data) {
-                        $scope.podcastData = data 
-                        console.log('podcast data', data)
+                    .then(function (response) {
+                        $scope.podcastData = response.data 
+                        console.log('podcast data', response.data)
                     });
 
             }
