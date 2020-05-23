@@ -1918,6 +1918,75 @@
     </section>
     <!-- //BLOG SECTION END -->
 
+    <!-- PODCASTS SECTION START -->
+    <section id="podcast" class="section">
+        <div class="container section-wrapper">
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <h2 class="section-title uppercase">Whats in my podcast queue</h2>
+    
+                        <p class="section-subtitle">
+                            I subscribe to {{podcastData.podcasts.length}} podcasts. Podcasts are a great way to keep up with the latest around the industry.  They are also a great
+                            way not to go insane duing long commutes.
+                        </p>
+    
+                        <span class="divider center"></span>
+                    </div>
+                    <!-- //.col-md-8 -->
+                </div>
+                <!-- //.row -->
+    
+                <!-- PODCASTS POST START -->
+                <div class="row">
+                    <div class="col-sm-6 col-md-4" ng-repeat="episode in podcastData.episodes | orderBy:'-published'"
+                        ng-click="goToVideo(episode)">
+                        <div class="blog-post">
+                            <div class="post-media">
+                                <a ng-href="episode.url">
+                                    <img ng-src="https://static.pocketcasts.com/discover/images/130/{{episode.uuid}}" class="img-responsive"
+                                        alt="{{episode.title}}" />
+                                </a>
+                            </div>
+                            <!-- //.post-media -->
+    
+                            <div class="post-meta match-height">
+                                <span class="date">
+                                    <span class="day">TBD </span>
+                                </span>
+    
+                                <div class="post-title">
+                                    <h4>
+                                        <a ng-href="{{episode.url}}">{{episode.title}}</a>
+                                    </h4>
+                                </div>
+                                <!-- //.post-title -->
+                            </div>
+                            <!-- //.post-meta -->
+                        </div>
+                        <!-- //.blog-post -->
+                    </div>
+                </div>
+                <!-- //PODCASTS POST END -->
+    
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="launch text-center">
+                            <a href="blog-index.html" class="btn btn-lg btn-custom">See All Podcasts</a>
+                        </div>
+                        <!-- //.launch -->
+                    </div>
+                    <!-- //.col-md-12 -->
+                </div>
+                <!-- //.row -->
+            </div>
+            <!-- //.section-content -->
+        </div>
+        <!-- //.container -->
+    </section>
+    <!-- //PODCASTS SECTION END -->
+
+
     <!-- WORK PROCESS SECTION START -->
     <section id="work-process" class="section">
         <div class="container section-wrapper">
@@ -2189,12 +2258,14 @@
             activate();
 
             function activate() {
-                $scope.age = moment().diff("1979-09-14", "years");
-                $scope.yearsOfExperience = moment().diff("1999-06-1", "years");
-                $scope.yearsOfNASAExperience = moment().diff("2005-04-1", "years");
-                $scope.meetupsHosted = moment().diff("2014-06-1", "weeks") / 2;
+                const nasaLastDate = moment("4/20/2020")
+                $scope.age = nasaLastDate.diff("1979-09-14", "years");
+                $scope.yearsOfExperience = nasaLastDate.diff("1999-06-1", "years");
+                $scope.yearsOfNASAExperience = nasaLastDate.diff("2005-04-1", "years");
+                $scope.meetupsHosted = nasaLastDate.diff("2014-06-1", "weeks") / 2;
 
-                return $http
+                //-- get videos
+                $http
                     .get(
                         "https://gsfcdevgroup.azurewebsites.net/api/GetGSFCDevGroupSessions"
                     )
@@ -2207,6 +2278,17 @@
                         $scope.videos = result.data;
                         console.log(result.data);
                     });
+
+                //-- get podcast queue
+                $http
+                    .get(
+                        "andrepodcasts.azurewebsites.net/api/PodcastQueue?code=i9CCOeapd1DhEEYNlTo2wORVR1GCySQX3ABRERI2f7aoHdVKWm9baA=="
+                    )
+                    .then(function (data) {
+                        $scope.podcastData = data 
+                        console.log('podcast data', data)
+                    });
+
             }
         });
     </script>
