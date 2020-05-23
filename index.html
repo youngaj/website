@@ -1919,7 +1919,7 @@
     <!-- //BLOG SECTION END -->
 
     <!-- PODCASTS SECTION START -->
-    <section id="podcast" class="section">
+    <section id="blog" class="section">
         <div class="container section-wrapper">
             <div class="section-content">
                 <div class="row">
@@ -1939,12 +1939,12 @@
     
                 <!-- PODCASTS POST START -->
                 <div class="row">
-                    <div class="col-sm-6 col-md-4" ng-repeat="episode in podcastData.episodes | orderBy:'-published'"
-                        ng-click="goToVideo(episode)">
+                    <div class="col-sm-6 col-md-4" ng-repeat="episode in podcastData.queue | orderBy:'-published'"
+                        ng-click="goToPodcast(episode.podcast)">
                         <div class="blog-post">
                             <div class="post-media">
                                 <a ng-href="episode.url">
-                                    <img ng-src="https://static.pocketcasts.com/discover/images/130/{{episode.uuid}}" class="img-responsive"
+                                    <img ng-src="https://static.pocketcasts.com/discover/images/130/{{episode.podcast}}.jpg" class="img-responsive"
                                         alt="{{episode.title}}" />
                                 </a>
                             </div>
@@ -1952,7 +1952,7 @@
     
                             <div class="post-meta match-height">
                                 <span class="date">
-                                    <span class="day">TBD </span>
+                                    <span class="day">{{episode.day}} </span> {{episode.monthYear}} 
                                 </span>
     
                                 <div class="post-title">
@@ -2285,8 +2285,16 @@
                         "https://andrepodcasts.azurewebsites.net/api/PodcastQueue"
                     )
                     .then(function (response) {
-                        $scope.podcastData = response.data 
-                        console.log('podcast data', response.data)
+
+                        var data = response.data
+                        data.queue = data.queue.map(episode =>{
+                            episode.day = moment(episode.published).format("DD");
+                            episode.monthYear = moment(episode.published).format("MMM YYYY");
+                            return episode
+                        })
+
+                        $scope.podcastData = data 
+                        console.log('podcast data', data)
                     });
 
             }
