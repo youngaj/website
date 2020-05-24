@@ -120,11 +120,15 @@
                     </li>
 
                     <li class="page-scroll">
+                        <a href="#podcast">Podcasts</a>
+                    </li>
+
+                    <li class="page-scroll">
                         <a href="#skills">Skills</a>
                     </li>
 
                     <li class="page-scroll">
-                        <a href="#blog">Blog</a>
+                        <a href="#devGroup">Dev Group</a>
                     </li>
 
                     <li class="page-scroll">
@@ -1307,6 +1311,79 @@
     </section>
     <!-- //REFERENCES SECTION END -->
 
+    <!-- PODCASTS SECTION START -->
+    <!-- Hack to get around blog id formatting and podcast sections -->
+    <section id="podcast" class="section"></section>
+    <section id="blog" class="section">
+        <div class="container section-wrapper">
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <h2 class="section-title">What's in my podcast queue</h2>
+    
+                        <p class="section-subtitle">
+                            I subscribe to {{podcastData.podcasts.length}} podcasts. Podcasts are a great way to keep up
+                            with the latest around the industry.
+                            They are also a great way not to go insane duing long commutes. Below is a list of what's
+                            currently in my queue. Follow along
+                            and/or send me suggestions <a href="https://twitter.com/Dreyoung79">@DreYoung79</a>
+                        </p>
+    
+                        <span class="divider center"></span>
+                    </div>
+                    <!-- //.col-md-8 -->
+                </div>
+                <!-- //.row -->
+    
+                <!-- PODCASTS POST START -->
+                <div class="row">
+                    <div class="col-sm-6 col-md-4" ng-repeat="episode in podcastData.queue | orderBy:'-published'"
+                        ng-click="goToPodcast(episode.podcast)">
+                        <div class="blog-post">
+                            <div class="post-media">
+                                <a ng-href="{{episode.url}}">
+                                    <img ng-src="https://static.pocketcasts.com/discover/images/130/{{episode.podcast}}.jpg"
+                                        class="img-responsive" alt="{{episode.title}}" />
+                                </a>
+                            </div>
+                            <!-- //.post-media -->
+    
+                            <div class="post-meta match-height">
+                                <span class="date">
+                                    <span class="day">{{episode.day}} </span> {{episode.monthYear}}
+                                </span>
+    
+                                <div class="post-title">
+                                    <h4>
+                                        <a ng-href="{{episode.url}}">{{episode.title}}</a>
+                                    </h4>
+                                </div>
+                                <!-- //.post-title -->
+                            </div>
+                            <!-- //.post-meta -->
+                        </div>
+                        <!-- //.blog-post -->
+                    </div>
+                </div>
+                <!-- //PODCASTS POST END -->
+    
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="launch text-center">
+                            <a href="blog-index.html" class="btn btn-lg btn-custom">See All Podcasts</a>
+                        </div>
+                        <!-- //.launch -->
+                    </div>
+                    <!-- //.col-md-12 -->
+                </div>
+                <!-- //.row -->
+            </div>
+            <!-- //.section-content -->
+        </div>
+        <!-- //.container -->
+    </section>
+    <!-- //PODCASTS SECTION END -->
+
     <!-- SKILLS SECTION START -->
     <section id="skills" class="section">
         <div class="container section-wrapper">
@@ -1316,9 +1393,12 @@
                         <h2 class="section-title uppercase">Skills & Expertise</h2>
 
                         <p class="section-subtitle">
-                            A winner is someone who recognizes his God-given talents, works
-                            his tail off to develop them into skills, and uses these skills
-                            to accomplish his goals.
+                            <a href="https://www.ted.com/talks/carol_dweck_the_power_of_believing_that_you_can_improve">
+                                Carol Dweck
+                            </a>
+                            is an Psycologist that researches "growth mindset" - the idea 
+                            that we can grow our brain's capacity to learn and to solve problems.
+                            I agree that with hard work we can always improve our skills.
                         </p>
 
                         <span class="divider center"></span>
@@ -1366,9 +1446,9 @@
                                 </div>
                                 <!-- //.circle -->
 
-                                <span class="percent">80%</span>
+                                <span class="percent">50%</span>
 
-                                <h4 class="text-center uppercase">Angular JS</h4>
+                                <h4 class="text-center uppercase">ReactJS</h4>
                             </div>
                             <!-- //.item -->
                         </div>
@@ -1411,7 +1491,7 @@
                                 </div>
                                 <!-- //.circle -->
 
-                                <span class="percent">40%</span>
+                                <span class="percent">50%</span>
 
                                 <h4 class="text-center uppercase">Node.js</h4>
                             </div>
@@ -1775,16 +1855,20 @@
     <!-- //MILESTONES SECTION END -->
 
     <!-- BLOG SECTION START -->
+    <div id="devGroup"></div>
     <section id="blog" class="section">
         <div class="container section-wrapper">
             <div class="section-content">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 text-center">
-                        <h2 class="section-title uppercase">Latest From The Blog</h2>
+                        <h2 class="section-title uppercase">Dev Group Sessions</h2>
 
                         <p class="section-subtitle">
-                            Blogging is a great way to show your talents and interests to
-                            prospective employers, while adding an edge to your resume.
+                            Attending developer meet ups are a great way of expanding 
+                            your knowledge and skills. But many of us have family and other
+                            obligations outside of work so I created and hosted a bi-weekly NASA wide 
+                            developer group that ran for over 8 years.  Below are an excert 
+                            from those sessions.
                         </p>
 
                         <span class="divider center"></span>
@@ -1822,82 +1906,6 @@
                         </div>
                         <!-- //.blog-post -->
                     </div>
-
-                    <div class="col-sm-6 col-md-4">
-                        <div class="blog-post">
-                            <div class="post-media">
-                                <img src="assets/images/blog/blog-2.png" class="img-responsive" alt="" />
-                            </div>
-                            <!-- //.post-media -->
-
-                            <div class="post-meta match-height">
-                                <span class="date"> <span class="day">17</span> Sep </span>
-
-                                <div class="post-title">
-                                    <h4>
-                                        <a href="http://andrejyoung.azurewebsites.net/post/hello-world-again">Hello
-                                            World... Again... and Again</a>
-                                    </h4>
-                                </div>
-                                <!-- //.post-title -->
-                            </div>
-                            <!-- //.post-meta -->
-                        </div>
-                        <!-- //.blog-post -->
-                    </div>
-                    <!-- //.col-md-4 -->
-
-                    <div class="col-sm-6 col-md-4">
-                        <div class="blog-post">
-                            <div class="post-media">
-                                <img src="assets/images/blog/blog-1.jpg" class="img-responsive" alt="" />
-                            </div>
-                            <!-- //.post-media -->
-
-                            <div class="post-meta match-height">
-                                <span class="date"> <span class="day">28</span> Jan </span>
-
-                                <div class="post-title">
-                                    <h4>
-                                        <a
-                                            href="http://darkmatterdevchronicle.blogspot.com/2015/01/the-restoration-project-from-monolith.html">
-                                            The Restoration Project... From Monolith Spaghetti
-                                            VbScript to ??
-                                        </a>
-                                    </h4>
-                                </div>
-                                <!-- //.post-title -->
-                            </div>
-                            <!-- //.post-meta -->
-                        </div>
-                        <!-- //.blog-post -->
-                    </div>
-                    <!-- //.col-md-4 -->
-
-                    <div class="col-sm-6 col-md-4">
-                        <div class="blog-post">
-                            <div class="post-media">
-                                <img src="assets/images/blog/blog-image-2.jpg" class="img-responsive" alt="" />
-                            </div>
-                            <!-- //.post-media -->
-
-                            <div class="post-meta match-height">
-                                <span class="date"> <span class="day">14</span> Sep </span>
-
-                                <div class="post-title">
-                                    <h4>
-                                        <a
-                                            href="http://darkmatterdevchronicle.blogspot.com/2014/09/chronicle-2-hiring-new-developer.html">Hiring
-                                            a new Developer</a>
-                                    </h4>
-                                </div>
-                                <!-- //.post-title -->
-                            </div>
-                            <!-- //.post-meta -->
-                        </div>
-                        <!-- //.blog-post -->
-                    </div>
-                    <!-- //.col-md-4 -->
                 </div>
                 <!-- //BLOG POST END -->
 
@@ -1917,75 +1925,6 @@
         <!-- //.container -->
     </section>
     <!-- //BLOG SECTION END -->
-
-    <!-- PODCASTS SECTION START -->
-    <section id="blog" class="section">
-        <div class="container section-wrapper">
-            <div class="section-content">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2 text-center">
-                        <h2 class="section-title uppercase">Whats in my podcast queue</h2>
-    
-                        <p class="section-subtitle">
-                            I subscribe to {{podcastData.podcasts.length}} podcasts. Podcasts are a great way to keep up with the latest around the industry.  They are also a great
-                            way not to go insane duing long commutes.
-                        </p>
-    
-                        <span class="divider center"></span>
-                    </div>
-                    <!-- //.col-md-8 -->
-                </div>
-                <!-- //.row -->
-    
-                <!-- PODCASTS POST START -->
-                <div class="row">
-                    <div class="col-sm-6 col-md-4" ng-repeat="episode in podcastData.queue | orderBy:'-published'"
-                        ng-click="goToPodcast(episode.podcast)">
-                        <div class="blog-post">
-                            <div class="post-media">
-                                <a ng-href="{{episode.url}}">
-                                    <img ng-src="https://static.pocketcasts.com/discover/images/130/{{episode.podcast}}.jpg" class="img-responsive"
-                                        alt="{{episode.title}}" />
-                                </a>
-                            </div>
-                            <!-- //.post-media -->
-    
-                            <div class="post-meta match-height">
-                                <span class="date">
-                                    <span class="day">{{episode.day}} </span> {{episode.monthYear}} 
-                                </span>
-    
-                                <div class="post-title">
-                                    <h4>
-                                        <a ng-href="{{episode.url}}">{{episode.title}}</a>
-                                    </h4>
-                                </div>
-                                <!-- //.post-title -->
-                            </div>
-                            <!-- //.post-meta -->
-                        </div>
-                        <!-- //.blog-post -->
-                    </div>
-                </div>
-                <!-- //PODCASTS POST END -->
-    
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="launch text-center">
-                            <a href="blog-index.html" class="btn btn-lg btn-custom">See All Podcasts</a>
-                        </div>
-                        <!-- //.launch -->
-                    </div>
-                    <!-- //.col-md-12 -->
-                </div>
-                <!-- //.row -->
-            </div>
-            <!-- //.section-content -->
-        </div>
-        <!-- //.container -->
-    </section>
-    <!-- //PODCASTS SECTION END -->
-
 
     <!-- WORK PROCESS SECTION START -->
     <section id="work-process" class="section">
