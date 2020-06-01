@@ -881,10 +881,8 @@
                                             <p>
                                                 Responsibilities:
                                                 <br />
-                                                Redesign of brand guidelines and standards microsite,
-                                                design of departmental logo lock-ups, photography of
-                                                products for marketing collateral, design of corporate
-                                                Twitter layout.
+                                                Implement modules for Peace Corps’ Volunteer Information Database Application Project (VIDA) to transition from MS
+                                                Access to a .Net 2.0 Winforms application. (MS SQL, ADO.Net, Data Dynamics ActiveReports, Infragistics NetAdvantage)
                                             </p>
                                         </div>
                                         <!-- //.panel-body -->
@@ -2198,8 +2196,8 @@
 
             function activate() {
                 const nasaLastDate = moment("4/20/2020")
-                $scope.age = nasaLastDate.diff("1979-09-14", "years");
-                $scope.yearsOfExperience = nasaLastDate.diff("1999-06-1", "years");
+                $scope.age = moment().diff("1979-09", "years");
+                $scope.yearsOfExperience = moment().diff("1999-06-1", "years");
                 $scope.yearsOfNASAExperience = nasaLastDate.diff("2005-04-1", "years");
                 $scope.meetupsHosted = nasaLastDate.diff("2014-06-1", "weeks") / 2;
 
